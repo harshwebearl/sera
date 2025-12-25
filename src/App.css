@@ -1,0 +1,40 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  overflow-x: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #1BA3D6;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+
+.icon {
+  color: #9CA3AF;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  border: 1px solid #9CA3AF;
+  padding: 7px 5px;
+  border-radius: 100%;
+  width: 25px !important;
+}
+
+.icon:hover {
+  color: #1BA3D6; /* primary */
+  border: 1px solid #1BA3D6;
+  transform: scale(1.1);
+   padding: 7px 5px;
+  border-radius: 100%;
+}
