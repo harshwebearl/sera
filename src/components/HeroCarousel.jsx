@@ -67,11 +67,11 @@ export default function HeroCarousel() {
                                                 alt={slide.h2}
                                                 className="
                                                     w-full
-                                                    max-w-[260px]
-                                                    sm:max-w-[320px]
-                                                    md:max-w-[420px]
-                                                    h-[260px]
-                                                    md:h-[400px]
+                                                    max-w-[300px]
+                                                    sm:max-w-[300px]
+                                                    md:max-w-[500px]
+                                                    h-[300px]
+                                                    md:h-[500px]
                                                     object-contain
                                                     drop-shadow-2xl
                                                     "
