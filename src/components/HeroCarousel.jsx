@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,14 +21,16 @@ const slides = [
         productImg: "/images/products/sludge-dewatering.png",
         bgImg: "/images/home/slugdewatering-carousel.png",
     },
+
     {
-        h1: "Water Treatment Equipment Supplier in Ahmedabad",
-        h2: "Mechanically Actuated Diaphragm Dosing Pumps",
+        h1: "Acoustic Hood Supplier in Ahmedabad",
+        h2: "Industrial Noise Control Acoustic Hoods",
         description:
-            "Sera Water is a leading water treatment company in Ahmedabad providing high-precision diaphragm dosing pumps for ETP, STP and WTP plants. Our pumps ensure accurate chemical dosing, long service life, and reliable operation for industrial wastewater treatment applications.",
-        productImg: "/images/products/dosing-pump.png",
+            "Sera Water is a trusted acoustic hood supplier in Ahmedabad providing high-quality noise control enclosures for blowers, pumps and industrial equipment. Our acoustic hoods effectively reduce sound levels, ensure compliance with noise regulations and maintain proper ventilation for ETP, STP and WTP plant applications.",
+        productImg: "/images/products/acoustic-hoods.png",
         bgImg: "/images/home/dosingpump-carousel.png",
     }
+
 
 
 
@@ -38,7 +40,7 @@ export default function HeroCarousel() {
     return (
         <section className="relative ">
             <Swiper
-                modules={[ Autoplay]}
+                modules={[Autoplay]}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 loop
                 speed={900}
@@ -47,7 +49,7 @@ export default function HeroCarousel() {
                 {slides.map((slide, index) => (
                     <SwiperSlide key={index}>
                         <div
-                            className="relative h-[130svh] sm:[100px] md:h-[100vh] xl:h-[90vh] flex bg-cover bg-center pt-14"
+                            className="relative h-[130svh] sm:[100px] md:h-[97vh]  flex bg-cover bg-center pt-14"
                             style={{ backgroundImage: `url(${slide.bgImg})` }}
                         >
                             {/* OVERLAY */}
