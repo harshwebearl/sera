@@ -123,7 +123,7 @@ export default function Navbar() {
           <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
 
           <a
-            href="tel:+919999999999" target="_blank" rel="noreferrer"
+            href="tel:+91 75758 04585" target="_blank" rel="noreferrer"
             className="flex items-center gap-3 hover:text-primary transition"
           >
             <FontAwesomeIcon icon={faPhone} className="text-2xl icon" />
@@ -244,7 +244,7 @@ export default function Navbar() {
           <div className="space-y-4 text-sm text-textGray">
 
             <a
-              href="tel:+919999999999" target="_blank" rel="noreferrer"
+              href="tel:+91 75758 04585" target="_blank" rel="noreferrer"
               className="flex items-center gap-3 hover:text-primary transition"
             >
               <FontAwesomeIcon icon={faPhone} className="text-xl" />
