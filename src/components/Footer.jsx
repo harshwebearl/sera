@@ -40,10 +40,10 @@ export default function Footer() {
               Our Products
             </h4>
             <ul className="space-y-2 text-gray-300 font-body text-sm">
-              <li><Link to="/products/air-blowers" className="hover:text-primary">Blowers</Link></li>
+              <li><Link to="/products/blowers" className="hover:text-primary">Blowers</Link></li>
               <li><Link to="/products/sludge-dewatering" className="hover:text-primary">Sludge Dewatering</Link></li>
-              <li><Link to="/products/dosing-pumps" className="hover:text-primary">Acoustic Hoods</Link></li>
-              <li><Link to="/products/spare-parts-accessories" className="hover:text-primary">Spare Parts</Link></li>
+              <li><Link to="/products/acoustic-hoods" className="hover:text-primary">Acoustic Hoods</Link></li>
+              <li><Link to="/products/spare-parts" className="hover:text-primary">Spare Parts</Link></li>
             </ul>
           </div>
 

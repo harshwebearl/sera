@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Products from './pages/Products';
 import ProductDetails from './pages/ProductDetails';
 import Gallery from './pages/Gallery';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
+        
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
