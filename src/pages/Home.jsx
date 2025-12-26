@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import HeroCarousel from "../components/HeroCarousel";
 import ProductItem from "../components/ProductItem";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";

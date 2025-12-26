@@ -11,13 +11,30 @@ import ProductDetails from './pages/ProductDetails';
 import Gallery from './pages/Gallery';
 import ScrollToTop from './components/ScrollToTop';
 
-import AdminLayout from "./admin/layout/AdminLayout";
 
+import AdminLayout from "./admin/layout/AdminLayout";
 import Dashboard from "./admin/pages/Dashboard";
-import HomeCMS from "./admin/pages/HomeCMS";
-import AdminProducts from "./admin/pages/Products";
-import AddProduct from "./admin/pages/AddProduct.jsx";
 import Login from './admin/pages/Login.jsx';
+
+import HomeCMS from "./admin/home/HomeCMS.jsx";
+import EditHomeCMS from './admin/home/EditHomeCMS.jsx';
+
+import IndustriesCMS from './admin/industries/IndustriesCMS.jsx';
+import EditIndustriesCMS from './admin/industries/EditIndustriesCMS.jsx';
+import CreateIndustry from './admin/industries/CreateIndustry.jsx';
+
+import ClientsCMS from './admin/clients/ClientsCMS.jsx';
+import AddClient from './admin/clients/AddClient.jsx';
+
+import AddTestimonial from './admin/testimonials/AddTestimonial.jsx';
+import TestimonialsCMS from './admin/testimonials/TestimonialsCMS.jsx';
+
+import AboutCMS from './admin/about/AboutCMS.jsx';
+import EditAbout from './admin/about/EditAbout.jsx';
+
+import ProductList from './admin/products/ProductList.jsx';
+import AdminProductDetails from './admin/products/AdminProductDetails.jsx';
+import EditProduct from './admin/products/EditProduct.jsx';
 
 
 function App() {
@@ -42,10 +59,10 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:slug" element={<ProductDetails />} />
 
-        
-<Route path="/login" element={<Login />} />
 
-         {/* ADMIN LAYOUT */}
+        <Route path="/login" element={<Login />} />
+
+        {/* ADMIN LAYOUT */}
         <Route path="/admin" element={<AdminLayout />}>
 
           {/* DASHBOARD */}
@@ -54,11 +71,30 @@ function App() {
 
           {/* HOME PAGE CMS */}
           <Route path="homecms" element={<HomeCMS />} />
+          <Route path="homecms/edit" element={<EditHomeCMS />} />
+
+          {/* Industries Section CMS */}
+          <Route path="industriescms" element={<IndustriesCMS />} />
+          <Route path="createindustry" element={<CreateIndustry />} />
+          <Route path="industriescms/edit/:id" element={<EditIndustriesCMS />} />
+
+          {/* Clients Section CMS */}
+          <Route path="clientscms" element={<ClientsCMS />} />
+          <Route path="addclient" element={<AddClient />} />
+
+          {/* Testimonial Section CMS */}
+          <Route path="testimonialscms" element={<TestimonialsCMS />} />
+          <Route path="addtestimonial" element={<AddTestimonial />} />
+
+          {/* About Page CMS */}
+          <Route path="aboutcms" element={<AboutCMS />} />
+          <Route path="editabout" element={<EditAbout />} />
 
           {/* PRODUCTS */}
-          <Route path="products" element={<AdminProducts />} />
-          <Route path="products/add" element={<AddProduct />} />
-          <Route path="products/edit/:id" element={<AddProduct />} />
+          <Route path="productslist" element={<ProductList />} />
+          <Route path="products/edit/:slug" element={<EditProduct />} />
+          <Route path="/admin/products/:slug" element={<AdminProductDetails />} />
+
 
           {/* GALLERY */}
           {/* <Route path="gallery" element={<Gallery />} /> */}

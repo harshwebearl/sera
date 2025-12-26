@@ -14,7 +14,7 @@ export default function Topbar({ onMenuClick }) {
     <header className="h-16 bg-white shadow flex items-center justify-between px-6">
       <div className="flex items-center justify-between w-full">
         
-        <h1 className="font-heading font-semibold text-xl text-primary">
+        <h1 className="font-heading font-semibold text-xl text-textDark">
           Admin Panel
         </h1>
         {/* MOBILE MENU BUTTON */}

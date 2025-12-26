@@ -7,10 +7,10 @@ import "swiper/css/navigation";
 const slides = [
     {
         h1: "Wastewater Treatment Solutions Provider in Gujarat",
-        h2: "Twin & Tri Lobe Blowers for Aeration Systems",
+        h2: "Twin Lobe Blowers for Aeration Systems",
         description:
             "We supply energy-efficient twin lobe and tri lobe blowers for sewage treatment plants and effluent treatment plants. Our blowers are widely used in industrial wastewater treatment solutions requiring consistent airflow and low power consumption.",
-        productImg: "/images/products/ring-blower.png",
+        productImg: "/images/products/air-blower.png",
         bgImg: "/images/home/blower-carousel.png",
     },
     {

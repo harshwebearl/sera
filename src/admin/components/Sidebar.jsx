@@ -4,14 +4,14 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const menu = [
   { name: "Dashboard", path: "/admin/dashboard", icon: "📊" },
-  { name: "Home CMS", path: "/admin/homecms", icon: "🏠" },
-  { name: "Products", path: "/products", icon: "📦" },
+  { name: "Home Page", path: "/admin/homecms", icon: "🏠" },
+  { name: "About Page", path: "/admin/aboutcms", icon: "🏠" },
+  { name: "Products CMS", path: "/admin/productslist", icon: "📦" },
+  { name: "Industry Section", path: "/admin/industriescms", icon: "🏠" },
+  { name: "Client Section", path: "/admin/clientscms", icon: "🏠" },
+  { name: "Testimonial Section", path: "/admin/testimonialscms", icon: "💬" },
   { name: "Gallery", path: "/gallery", icon: "🖼️" },
-  { name: "Testimonials", path: "/testimonials", icon: "💬" },
-  { name: "Enquiries", path: "/enquiries", icon: "📩" },
-  { name: "SEO Settings", path: "/seo", icon: "🔍" },
-  { name: "Site Settings", path: "/settings", icon: "⚙️" },
-  { name: "Logout", path: "/login", icon: "⚙️" },
+  { name: "Logout", path: "/login", icon: "↩" },
 ];
 
 export default function Sidebar({ mobile = false, closeSidebar }) {

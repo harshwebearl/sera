@@ -1,5 +1,6 @@
 export const products = [
   {
+    id: 1,
     slug: "blowers",
     name: "Blowers",
     shortDesc:
@@ -22,6 +23,7 @@ export const products = [
   },
 
   {
+    id: 2,
     slug: "sludge-dewatering",
     name: "Sludge Dewatering",
     shortDesc:
@@ -44,6 +46,7 @@ export const products = [
   },
 
   {
+    id: 3,
     slug: "acoustic-hoods",
     name: "Acoustic Hoods",
     shortDesc:
@@ -66,6 +69,7 @@ export const products = [
   },
 
   {
+    id: 4,
     slug: "spare-parts",
     name: "Spare Parts / Accessories",
     shortDesc:
