@@ -43,9 +43,6 @@ export default function Navbar() {
 
 
 
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "auto";
-  }, [open]);
 
   const navLinkClass = ({ isActive }) =>
     isActive
@@ -101,6 +98,20 @@ export default function Navbar() {
         { name: "Electronic Dosing Pump", path: "/products/dosingpump-agitators/electronic-dosing-pump" },
       ],
     },
+    {
+      name: "RO Components",
+      path: "/products/ro-components",
+      children: [
+        { name: "Vessels", path: "/products/ro-components/vessels" },
+        { name: "Pressure Tube", path: "/products/ro-components/pressure-tube" },
+        { name: "Float Switch", path: "/products/ro-components/float-switch" },
+        { name: "Pressure Guage", path: "/products/ro-components/pressure-guage" },
+        { name: "Multiport Valve", path: "/products/ro-components/multiport-valve" },
+        { name: "Distribution System", path: "/products/ro-components/distribution-system" },
+        { name: "Sand", path: "/products/ro-components/sand" },
+        { name: "Carbon", path: "/products/ro-components/carbon" },
+      ],
+    },
   ];
 
   
@@ -126,9 +137,9 @@ export default function Navbar() {
           <NavLink to="/about" className={navLinkClass}>About</NavLink>
 
           <div className="relative group hidden md:block cursor-pointer">
-            <div className="hover:text-primary">
+            <NavLink to="/products" className={navLinkClass}>
               Products
-            </div>
+            </NavLink>
 
             {/* FIRST LEVEL DROPDOWN */}
             <div
@@ -282,7 +293,7 @@ export default function Navbar() {
 
                   {/* SUB ITEMS */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? "max-h-40" : "max-h-0"
+                    className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? "max-h-54" : "max-h-0"
                       }`}
                   >
                     <div className="pl-8 pb-2">
