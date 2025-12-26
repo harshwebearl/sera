@@ -19,6 +19,17 @@ import {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+    setActiveIndex(null);
+  };
+
+  const toggleSubMenu = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,8 +49,8 @@ export default function Navbar() {
 
   const navLinkClass = ({ isActive }) =>
     isActive
-      ? "text-primary font-semibold border-b-2 border-primary"
-      : "hover:text-primary transition";
+      ? "text-primary font-semibold border-b-2 border-primary cursor-pointer"
+      : "hover:text-primary transition cursor-pointer";
 
 
   useEffect(() => {
@@ -56,12 +67,32 @@ export default function Navbar() {
     };
   }, []);
 
+
+
   const products = [
-    { name: "Blowers", path: "/products/blowers" },
-    { name: "Sludge Dewatering", path: "/products/sludge-dewatering" },
-    { name: "Acoustic Hoods", path: "/products/acoustic-hoods" },
-    { name: "Spare Parts / Accessories", path: "/products/spare-parts" },
+    {
+      name: "Water Handling Components ",
+      path: "/products/water-handling",
+      children: [
+        { name: "Blowers", path: "/products/water-handling/blowers" },
+        { name: "Sludge Dewatering", path: "/products/water-handling/sludge-dewatering" },
+        { name: "Acoustic Hoods", path: "/products/water-handling/acoustic-hoods" },
+        { name: "Spare Parts / Accessories", path: "/products/water-handling/spare-parts" },
+      ],
+    },
+    {
+      name: "Waste Water Components",
+      path: "/products/water-treatment",
+      children: [
+        { name: "Tubular Diffusers", path: "/products/tubular-diffusers" },
+        { name: "Disc Diffusers", path: "/products/disc-diffusers" },
+        { name: "Tubesettler Media", path: "/products/tubesettler-media" },
+        { name: "MBBR Media", path: "/products/mbbr-media" },
+      ],
+    },
   ];
+
+  
 
 
 
@@ -83,39 +114,56 @@ export default function Navbar() {
           <NavLink to="/" end className={navLinkClass}>Home</NavLink>
           <NavLink to="/about" className={navLinkClass}>About</NavLink>
 
-          {/* DESKTOP PRODUCTS DROPDOWN */}
-          <div className="relative group hidden md:block">
-            <NavLink
-              to="/products"
-              className={navLinkClass}
-            >
+          <div className="relative group hidden md:block cursor-pointer">
+            <div className="hover:text-primary">
               Products
-            </NavLink>
+            </div>
 
-            {/* DROPDOWN */}
-            <div className="
-    absolute left-0 top-5 mt-3
-    w-56 bg-white shadow-xl rounded-b-lg
-    opacity-0 invisible group-hover:opacity-100 group-hover:visible
-    transition-all duration-300 z-50
-  ">
-              <ul className="py-2">
+            {/* FIRST LEVEL DROPDOWN */}
+            <div
+              className="
+      absolute left-0 top-full mt-2 w-64 bg-white shadow-lg rounded-md
+      opacity-0 invisible group-hover:opacity-100 group-hover:visible
+      transition-all duration-300 z-50
+    "
+            >
+              <ul>
                 {products.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className="relative group/item">
+                    {/* Parent Item */}
                     <NavLink
                       to={item.path}
-                      className={({ isActive }) =>
-                        `block px-5 py-2 text-sm font-body text-gray-700 hover:bg-primary/10 hover:text-primary transition
-              ${isActive ? "text-primary font-semibold" : ""}`
-                      }
+                      className="flex justify-between items-center px-4 py-2 text-sm
+             text-gray-700 hover:bg-primary/10 hover:text-primary"
                     >
                       {item.name}
+                      <span className="text-xs"></span>
                     </NavLink>
+
+                    {/* SUB MENU */}
+                    <div
+                      className="
+              absolute top-0 right-full ml-1 w-56 bg-white shadow-lg rounded-md
+              opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible
+              transition-all duration-300
+            "
+                    >
+                      {item.children.map((child, idx) => (
+                        <NavLink
+                          key={idx}
+                          to={child.path}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary/10 hover:text-primary"
+                        >
+                          {child.name}
+                        </NavLink>
+                      ))}
+                    </div>
                   </li>
                 ))}
               </ul>
             </div>
           </div>
+
 
 
           <NavLink to="/gallery" className={navLinkClass}>Gallery</NavLink>
@@ -188,40 +236,60 @@ export default function Navbar() {
           </NavLink>
 
 
-          <div className="flex flex-col">
+          <div className="w-full">
+
+            {/* MAIN BUTTON */}
             <button
-              onClick={() => setProductOpen(!productOpen)}
-              className="flex justify-between items-center text-left font-body text-lg text-textGray"
+              onClick={toggleMenu}
+              className="w-full flex justify-between items-center pr-4  text-lg font-semibold"
             >
-             <NavLink to="/products">Products</NavLink> 
-              <span className={`transition-transform ${productOpen ? "rotate-180" : ""}`}>
-                ▼
-              </span>
+              Products
+              <span className={`transition ${openMenu ? "rotate-180" : ""}`}>▼</span>
             </button>
 
-            {productOpen && (
-              <div className="mt-2 ml-4 space-y-2">
-                {products.map((item, index) => (
-                  <NavLink
-                    key={index}
-                    to={item.path}
-                    onClick={() => {
-                      setOpen(false);
-                      setProductOpen(false);
-                    }}
-                    className={({ isActive }) =>
-                      `block transition
-             ${isActive
-                        ? "text-primary font-semibold"
-                        : "text-textGray hover:text-primary"
-                      }`
-                    }
+            {/* FIRST LEVEL */}
+            <div
+              className={`transition-all duration-300 overflow-hidden ${openMenu ? "max-h-[500px]" : "max-h-0"
+                }`}
+            >
+              {products.map((item, index) => (
+                <div key={index} className="">
+
+                  {/* CATEGORY */}
+                  <button
+                    onClick={() => toggleSubMenu(index)}
+                    className="w-full text-sm flex justify-between items-center px-6 py-3 text-left font-medium"
                   >
-                    {item.name}
-                  </NavLink>
-                ))}
-              </div>
-            )}
+                  <Link to={item.path}>  {item.name}</Link>
+                    <span
+                      className={`transition-transform ${activeIndex === index ? "rotate-180" : ""
+                        }`}
+                    >
+                      ▾
+                    </span>
+                  </button>
+
+                  {/* SUB ITEMS */}
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ${activeIndex === index ? "max-h-40" : "max-h-0"
+                      }`}
+                  >
+                    <div className="pl-8 pb-2">
+                      {item.children.map((child, i) => (
+                        <NavLink
+                          key={i}
+                          to={child.path}
+                          className="block py-2 text-sm text-gray-600 hover:text-primary"
+                        >
+                          {child.name}
+                        </NavLink>
+                      ))}
+                    </div>
+                  </div>
+
+                </div>
+              ))}
+            </div>
           </div>
 
 

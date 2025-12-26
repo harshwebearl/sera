@@ -35,6 +35,9 @@ import EditAbout from './admin/about/EditAbout.jsx';
 import ProductList from './admin/products/ProductList.jsx';
 import AdminProductDetails from './admin/products/AdminProductDetails.jsx';
 import EditProduct from './admin/products/EditProduct.jsx';
+import GalleryList from './admin/gallery/GalleryList.jsx';
+import AddGallery from './admin/gallery/AddGallery.jsx';
+import ProductCategory from './pages/ProductCategory.jsx';
 
 
 function App() {
@@ -57,7 +60,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/products/:slug" element={<ProductDetails />} />
+        <Route path="/products/:category" element={<ProductCategory />} />
+        <Route path="/products/:category/:slug" element={<ProductDetails />} />
+
+
+
 
 
         <Route path="/login" element={<Login />} />
@@ -94,6 +101,11 @@ function App() {
           <Route path="productslist" element={<ProductList />} />
           <Route path="products/edit/:slug" element={<EditProduct />} />
           <Route path="/admin/products/:slug" element={<AdminProductDetails />} />
+
+          {/* gallery */}
+          <Route path="gallerylist" element={<GalleryList />} />
+          <Route path="gallerylist/add" element={<AddGallery />} />
+
 
 
           {/* GALLERY */}
