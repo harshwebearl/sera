@@ -84,10 +84,10 @@ export default function Navbar() {
       name: "Waste Water Components",
       path: "/products/water-treatment",
       children: [
-        { name: "Tubular Diffusers", path: "/products/tubular-diffusers" },
-        { name: "Disc Diffusers", path: "/products/disc-diffusers" },
-        { name: "Tubesettler Media", path: "/products/tubesettler-media" },
-        { name: "MBBR Media", path: "/products/mbbr-media" },
+        { name: "Tubular Diffusers", path: "/products/water-treatment/tubular-diffusers" },
+        { name: "Disc Diffusers", path: "/products/water-treatment/disc-diffusers" },
+        { name: "Tubesettler Media", path: "/products/water-treatment/tubesettler-media" },
+        { name: "MBBR Media", path: "/products/water-treatment/mbbr-media" },
       ],
     },
   ];
