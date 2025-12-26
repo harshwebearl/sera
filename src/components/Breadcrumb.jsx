@@ -42,7 +42,7 @@ export default function Breadcrumb({
             className="flex items-center gap-2 hover:text-primary transition"
           >
             <FontAwesomeIcon icon={faHouse} />
-            Home
+           <span className="hidden md:block">Home</span> 
           </Link>
 
           {pathnames.map((name, index) => {
@@ -57,7 +57,7 @@ export default function Breadcrumb({
               .replace(/\b\w/g, (l) => l.toUpperCase());
 
             return (
-              <span key={index} className="flex items-center gap-2 ml-2" >
+              <span key={index} className="flex items-center gap-2 ml-2 " >
                 <FontAwesomeIcon
                   icon={faChevronRight}
                   className="text-xs opacity-70"

@@ -186,5 +186,120 @@ export const products = [
       },
     ],
   },
+  {
+  category: "dosingpump-agitators",
+  categoryName: "Dosing Pumps & Agitators",
+  items: [
+    {
+      slug: "hydraulically-actuated-diaphragm-pump",
+      name: "Hydraulically Actuated Diaphragm Pump",
+      image: "/images/products/hydraulic-actuated-pump.png",
+      shortDesc:
+        "High-precision hydraulic diaphragm dosing pumps designed for accurate chemical dosing in industrial applications.",
+      description:
+        "Hydraulically actuated diaphragm pumps are designed for precise and leak-free dosing of chemicals in demanding industrial environments. These pumps offer excellent accuracy, high pressure handling, and long service life, making them ideal for chemical dosing in water and wastewater treatment plants.",
+      applications: [
+        "Water & Wastewater Treatment",
+        "Chemical Processing Plants",
+        "Power Plants",
+        "Pharmaceutical Industry",
+      ],
+      features: [
+        "High dosing accuracy",
+        "Leak-proof diaphragm design",
+        "Suitable for corrosive chemicals",
+        "Long operational life",
+      ],
+    },
+
+    {
+      slug: "plunger-metering-pump",
+      name: "Plunger Metering Pump",
+      image: "/images/products/plunger-metering-pump.png",
+      shortDesc:
+        "Heavy-duty plunger metering pumps for high-pressure chemical dosing applications.",
+      description:
+        "Plunger metering pumps are designed for high-pressure and high-flow applications where precise chemical dosing is required. These pumps are widely used in industrial processes requiring consistent and accurate flow control.",
+      applications: [
+        "Chemical Processing",
+        "Oil & Gas Industry",
+        "Water Treatment Plants",
+        "Industrial Manufacturing",
+      ],
+      features: [
+        "High pressure capability",
+        "Robust mechanical construction",
+        "Accurate flow control",
+        "Suitable for harsh operating conditions",
+      ],
+    },
+
+    {
+      slug: "mechanical-diaphragm-pump",
+      name: "Mechanical Diaphragm Metering Pump",
+      image: "/images/products/mechanical-diaphragm-pump.png",
+      shortDesc:
+        "Reliable diaphragm dosing pumps for low to medium pressure applications.",
+      description:
+        "Mechanical diaphragm metering pumps are ideal for precise chemical dosing where moderate pressure and flow rates are required. They offer simple construction, easy maintenance, and long service life.",
+      applications: [
+        "Water Treatment Plants",
+        "Chemical Dosing Systems",
+        "Industrial Process Control",
+      ],
+      features: [
+        "Simple and robust design",
+        "Low maintenance cost",
+        "Accurate chemical dosing",
+        "Compact and durable construction",
+      ],
+    },
+
+    {
+      slug: "progressive-cavity-pump",
+      name: "Progressive Cavity Pump",
+      image: "/images/products/progressive-cavity-pump.png",
+      shortDesc:
+        "Positive displacement pumps designed for smooth and pulsation-free fluid transfer.",
+      description:
+        "Progressive cavity pumps are ideal for handling viscous, abrasive, and shear-sensitive fluids. These pumps ensure steady flow and are widely used in wastewater treatment, sludge handling, and industrial processing applications.",
+      applications: [
+        "Sludge Transfer",
+        "Wastewater Treatment Plants",
+        "Chemical Processing",
+        "Industrial Slurry Handling",
+      ],
+      features: [
+        "Low pulsation flow",
+        "Handles high viscosity fluids",
+        "Excellent suction capability",
+        "Durable and low-maintenance design",
+      ],
+    },
+
+    {
+      slug: "electronic-dosing-pump",
+      name: "Electronic Dosing Pump",
+      image: "/images/products/electronic-dosing-pump.png",
+      shortDesc:
+        "Electronically controlled dosing pumps for precise and automated chemical dosing.",
+      description:
+        "Electronic dosing pumps provide accurate and programmable chemical dosing for water treatment and industrial applications. These pumps support automation and integration with control systems for precise flow regulation.",
+      applications: [
+        "Water Treatment Systems",
+        "Cooling Towers",
+        "Chemical Dosing Applications",
+        "Process Automation Systems",
+      ],
+      features: [
+        "Digital control interface",
+        "High dosing accuracy",
+        "Energy efficient operation",
+        "Easy integration with PLC/SCADA",
+      ],
+    },
+  ],
+},
+
 
 ];
