@@ -221,7 +221,7 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       <div
         className={`
-          fixed top-0 right-0 h-full w-[85vw] bg-dark z-50 pt-2
+          fixed top-0 right-0 h-screen overflow-y-auto w-full bg-dark z-50 pt-2 
           transform transition-transform duration-300
           ${open ? "translate-x-0" : "translate-x-full"}
         `}
@@ -364,7 +364,7 @@ export default function Navbar() {
           </div>
 
           {/* SOCIAL ICONS */}
-          <div className="flex gap-4">
+          <div className="flex gap-4 pb-20">
             <a
               href="https://wa.me/919999999999"
               target="_blank"
