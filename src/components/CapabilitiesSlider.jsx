@@ -37,7 +37,7 @@ export default function CapabilitiesSlider() {
   ];
 
   return (
-    <section className="py-10 bg-primary/5">
+    <section className="py-10 ">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADING */}

@@ -28,7 +28,7 @@ export default function OurJourney() {
   ];
 
   return (
-    <section className="py-10 bg-gradient-to-b from-white to-primary/5 overflow-hidden">
+    <section className="py-10  overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADING */}

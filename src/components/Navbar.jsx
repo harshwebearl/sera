@@ -7,6 +7,8 @@ import {
   faEnvelope,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
+import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+
 
 import {
   faWhatsapp,
@@ -116,19 +118,59 @@ export default function Navbar() {
     },
   ];
 
-  
 
 
 
-  return (
+
+  return (<>
+    
     <nav className="fixed top-0 w-full z-50 bg-dark/90 backdrop-blur border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-6 h-[70px] flex items-center justify-between">
+    <div className="bg-[#1f2933] text-white text-sm hidden md:block">
+      <div className="max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
+
+        {/* LEFT INFO */}
+        <div className="flex flex-wrap items-center gap-4">
+          <span className="flex items-center gap-1">
+            <FaPhoneAlt className="text-primary" />
+            <a href="tel:+9175758 04585" className="hover:underline hover:text-primary">
+              +91 75758 04585
+            </a>
+          </span>
+
+
+          <span className="flex items-center gap-1">
+            <FaEnvelope className="text-primary" />
+            <a href="mailto:serawater007@gmail.com" className="hover:underline hover:text-primary">
+              serawater007@gmail.com
+            </a>
+          </span>
+        </div>
+
+        {/* SOCIAL ICONS */}
+        <div className="flex items-center gap-4">
+          <a href="#" className="hover:text-primary">
+            <FaFacebookF />
+          </a>
+          <a href="#" className="hover:text-primary">
+            <FaTwitter />
+          </a>
+          <a href="#" className="hover:text-primary">
+            <FaLinkedinIn />
+          </a>
+          <a href="https://wa.me/918668750398" target="_blank" rel="noreferrer" className="hover:text-primary">
+            <FaWhatsapp />
+          </a>
+        </div>
+
+      </div>
+    </div>
+      <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
 
         {/* LOGO */}
         <Link to="/" className="flex items-center">
           <img
             src="/images/logo/sera-logo.png"
-            className="h-14 md:h-16"
+            className="h-16 md:h-20"
             alt="Sera Water Logo"
           />
         </Link>
@@ -232,7 +274,7 @@ export default function Navbar() {
         <Link to="/" className="flex items-center px-4">
           <img
             src="/images/logo/sera-logo.png"
-            className="h-14"
+            className="h-16"
             alt="Sera Water Logo"
           />
         </Link>
@@ -284,7 +326,7 @@ export default function Navbar() {
                     onClick={() => toggleSubMenu(index)}
                     className="w-full text-sm flex justify-between items-center px-6 py-3 text-left font-medium"
                   >
-                  <Link to={item.path}>  {item.name}</Link>
+                    <Link to={item.path}>  {item.name}</Link>
                     <span
                       className={`transition-transform ${activeIndex === index ? "rotate-180" : ""
                         }`}
@@ -402,5 +444,5 @@ export default function Navbar() {
 
       </div>
     </nav>
-  );
+  </>);
 }

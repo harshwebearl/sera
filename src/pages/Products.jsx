@@ -42,13 +42,13 @@ export default function Products() {
                   <Link
                     key={item.slug}
                     to={`/products/${category.category}/${item.slug}`}
-                    className="group bg-gray-50 rounded-xl shadow-sm hover:shadow-md hover:shadow-primary transition overflow-hidden"
+                    className="group bg-gray-50 rounded-xl shadow-sm hover:shadow-md hover:shadow-primary transition overflow-hidden border border-primaryDark/30"
                   >
                     <div className="h-44 bg-white flex items-center justify-center p-4">
                       <img
                         src={item.image}
                         alt={item.name}
-                        className="max-h-36 object-contain group-hover:scale-105 transition"
+                        className="max-h-36 w-full object-contain group-hover:scale-105 transition"
                       />
                     </div>
 

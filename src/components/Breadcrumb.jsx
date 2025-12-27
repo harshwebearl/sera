@@ -17,7 +17,7 @@ export default function Breadcrumb({
 
   return (
     <section
-      className="relative h-[220px] md:h-[70vh] bg-cover bg-center mt-[70px] "
+      className="relative h-[220px] md:h-[70vh] bg-cover bg-center mt-[70px] md:mt-[109px] "
       style={{ backgroundImage: `url(/images/logo/breadcrumb.png)` }} data-aos="fade-zoom-in"
     
     >

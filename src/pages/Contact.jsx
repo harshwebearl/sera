@@ -18,7 +18,7 @@ export default function Contact() {
             </div>
 
       {/* BRANCH LOCATIONS */}
-      <section className="py-10  bg-gradient-to-b from-white to-primary/5">
+      <section className="py-10  ">
         <div className="max-w-7xl mx-auto px-6">
 
           <div
@@ -77,7 +77,7 @@ export default function Contact() {
       </section>
 
       {/* CONTACT + FORM */}
-      <section className="py-10  bg-gradient-to-b from-primary/5 to-white overflow-hidden">
+      <section className="py-10   overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 

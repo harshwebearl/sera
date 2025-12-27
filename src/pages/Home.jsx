@@ -20,7 +20,7 @@ export default function Home() {
 
 
       {/* ABOUT SECTION */}
-      <section className="py-10  bg-gradient-to-b from-white to-primary/5">
+      <section className="py-10 ">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -107,7 +107,7 @@ export default function Home() {
 
 
       {/* PRODUCTS SECTION */}
-      <section className="py-16  bg-gradient-to-b from-primary/5 to-white">
+      <section className="py-16  ">
         <div className="max-w-7xl mx-auto px-6">
 
           {/* SECTION HEADING */}
@@ -134,10 +134,10 @@ export default function Home() {
           >
             <SwiperSlide>
               <ProductItem
-                title="Air Blowers for ETP & STP Plants"
+                title="Blowers"
                 image="/images/products/air-blower.png"
-                link="/products/air-blowers"
-                description="High-performance air blowers designed for aeration in sewage treatment plants (STP) and effluent treatment plants (ETP), ensuring reliable airflow and energy efficiency."
+                link="/products/water-handling/air-blowers"
+                description="High-performance industrial blowers for aeration and wastewater treatment applications."
               />
 
             </SwiperSlide>
@@ -146,40 +146,40 @@ export default function Home() {
 
             <SwiperSlide>
               <ProductItem
-                title="Acoustic Hoods for Industrial Equipment"
-                image="/images/products/acoustic-hoods.png"
-                link="/products/acoustic-hoods"
-                description="Noise control acoustic enclosures designed to reduce sound levels of blowers, pumps and industrial machinery in treatment plants."
+                title="Tubular Diffusers"
+                image="/images/products/tubular-diffusers.jpg"
+                link="/products/water-treatment/tubular-diffusers"
+                description="High-efficiency tubular diffusers designed for uniform air distribution in wastewater treatment systems."
               />
 
             </SwiperSlide>
 
             <SwiperSlide>
               <ProductItem
-                title="Ring Blowers"
-                image="/images/products/ring-blower.png"
-                link="/products/ring-blower"
-                description="Energy-efficient ring blowers suitable for air supply and vacuum applications in water and wastewater treatment systems."
+                title="Hydraulic Pump"
+                image="/images/products/hydraulic-actuated-pump.png"
+                link="/products/dosingpump-agitators"
+                description="High-precision hydraulic diaphragm dosing pumps designed for accurate chemical dosing in industrial applications."
               />
 
             </SwiperSlide>
 
             <SwiperSlide>
               <ProductItem
-                title="Sludge Dewatering Machines"
-                image="/images/products/sludge-dewatering.png"
-                link="/products/sludge-dewatering"
-                description="Advanced sludge dewatering machines used in ETP and STP plants to reduce sludge volume and improve handling efficiency."
+                title="RO Vessels"
+                image="/images/products/vessel.jpg"
+                link="/products/ro-components/vessels"
+                description="High-pressure RO vessels designed for reliable membrane housing in water purification systems."
               />
 
             </SwiperSlide>
 
             <SwiperSlide>
               <ProductItem
-                title="Spare Parts & Accessories"
-                image="/images/products/spare-parts.png"
-                link="/products/spare-parts-accessories"
-                description="Genuine spare parts and accessories for blowers, pumps, agitators and other water treatment equipment ensuring long service life."
+                title="Industrial Agitator & Mixer"
+                image="/images/products/agitator-mixer.png"
+                link="/products/dosingpump-agitators/industrial-agitator-mixer"
+                description="High-performance industrial agitators and mixers designed for efficient mixing, blending, and agitation in water and wastewater treatment processes."
               />
 
             </SwiperSlide>
@@ -190,7 +190,7 @@ export default function Home() {
 
 
       {/* INDUSTRIES WE SERVE */}
-      <section className="py-10  bg-gradient-to-b from-white to-primary/5">
+      <section className="py-10 ">
         <div className="max-w-7xl mx-auto px-6">
 
           {/* SECTION HEADING */}

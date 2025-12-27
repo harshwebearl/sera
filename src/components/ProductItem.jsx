@@ -4,7 +4,7 @@ function ProductItem({ title, link, image, description }) {
   return (
     <Link
       to={link}
-      className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition duration-300"
+      className="group relative block rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-2xl transition duration-300 border border-primaryDark/30"
     >
       {/* IMAGE */}
       <div className="relative h-72 overflow-hidden">

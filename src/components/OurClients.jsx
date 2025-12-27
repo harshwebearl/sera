@@ -15,7 +15,7 @@ export default function OurClients() {
   ];
 
   return (
-    <section className="py-16 bg-primary/5">
+    <section className="py-16 ">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* SECTION HEADING */}
@@ -50,7 +50,7 @@ export default function OurClients() {
                   src={client.logo}
                   alt={client.name}
                   className="
-                    max-h-28
+                    h-[140px] w-[140px]
                     object-contain
                     grayscale
                     opacity-70

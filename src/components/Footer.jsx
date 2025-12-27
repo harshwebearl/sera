@@ -17,16 +17,24 @@ export default function Footer() {
     <footer className="bg-dark text-white">
 
       {/* ================= ROW 1 ================= */}
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-center border-b border-white/10">
+         <img
+              src="/images/logo/sera-logo.png"
+              alt="Sera Water - Water Treatment Equipment Supplier in Ahmedabad"
+              className="h-32 "
+            />
+      </div>
+
+      {/* ================= ROW 1 ================= */}
       <div className="max-w-7xl mx-auto px-6 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
           {/* LOGO + SEO DESCRIPTION */}
           <div>
-            <img
-              src="/images/logo/sera-logo.png"
-              alt="Sera Water - Water Treatment Equipment Supplier in Ahmedabad"
-              className="h-14 mb-4"
-            />
+            
+            <h4 className="text-lg font-heading font-semibold text-white mb-4 border-b-2 border-primary pb-2">
+              About Us
+            </h4>
             <p className="text-gray-300 font-body text-sm leading-relaxed">
               <strong>Sera Water</strong> is a trusted water and wastewater treatment
               equipment supplier in Ahmedabad, offering complete ETP, STP and WTP
@@ -34,53 +42,41 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* OUR PRODUCTS */}
-          <div>
-            <h4 className="text-lg font-heading font-semibold text-primary mb-4 border-b-2 border-primary pb-2">
-              Our Products
-            </h4>
-            <ul className="space-y-2 text-gray-300 font-body text-sm">
-              <li><Link to="/products/blowers" className="hover:text-primary">Blowers</Link></li>
-              <li><Link to="/products/sludge-dewatering" className="hover:text-primary">Sludge Dewatering</Link></li>
-              <li><Link to="/products/acoustic-hoods" className="hover:text-primary">Acoustic Hoods</Link></li>
-              <li><Link to="/products/spare-parts" className="hover:text-primary">Spare Parts</Link></li>
-            </ul>
-          </div>
+         
 
           {/* QUICK LINKS */}
           <div>
-            <h4 className="text-lg font-heading font-semibold text-primary mb-4 border-b-2 border-primary pb-2">
+            <h4 className="text-lg font-heading font-semibold text-white mb-4 border-b-2 border-primary pb-2">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-gray-300 font-body text-sm">
-              <li><Link to="/" className="hover:text-primary">Home</Link></li>
-              <li><Link to="/about" className="hover:text-primary">About Us</Link></li>
-              <li><Link to="/products" className="hover:text-primary">Products</Link></li>
-              <li><Link to="/gallery" className="hover:text-primary">Gallery</Link></li>
-              {/* <li><Link to="/blogs" className="hover:text-primary">Blogs</Link></li> */}
-              <li><Link to="/contact" className="hover:text-primary">Contact Us</Link></li>
+            <ul className="space-y-2 text-primary font-body text-sm">
+              <li><Link to="/" className="hover:text-white"><span className="text-sm mr-2 text-white">*</span>Home</Link></li>
+              <li><Link to="/about" className="hover:text-white"><span className="text-sm mr-2 text-white">*</span>About Us</Link></li>
+              <li><Link to="/products" className="hover:text-white"><span className="text-sm mr-2 text-white">*</span>Products</Link></li>
+              <li><Link to="/gallery" className="hover:text-white"><span className="text-sm mr-2 text-white">*</span>Gallery</Link></li>
+              <li><Link to="/contact" className="hover:text-white"><span className="text-sm mr-2 text-white">*</span>Contact Us</Link></li>
             </ul>
           </div>
 
           {/* CONTACT + SOCIAL */}
           <div>
-            <h4 className="text-lg font-heading font-semibold text-primary mb-4 border-b-2 border-primary pb-2">
+            <h4 className="text-lg font-heading font-semibold text-white mb-4 border-b-2 border-primary pb-2">
               Contact Us
             </h4>
 
-            <div className="space-y-3 text-gray-300 font-body text-sm">
-              <a href="tel:+91 75758 04585" className="flex items-center gap-3 hover:text-primary">
+            <div className="space-y-3 text-primary font-body text-sm">
+              <a href="tel:+91 75758 04585" className="flex items-center gap-3 hover:text-white">
                 <FontAwesomeIcon icon={faPhone} />
                 +91 75758 04585
               </a>
 
-              <a href="mailto:serawater007@gmail.com" className="flex items-center gap-3 hover:text-primary">
+              <a href="mailto:serawater007@gmail.com" className="flex items-center gap-3 hover:text-white">
                 <FontAwesomeIcon icon={faEnvelope} />
                 serawater007@gmail.com
               </a>
             </div>
 
-            <h4 className="text-lg font-heading font-semibold text-primary my-4 mt-6 border-b-2 border-primary pb-2">
+            <h4 className="text-lg font-heading font-semibold text-white my-4 mt-6 border-b-2 border-primary pb-2">
               Social Media
             </h4>
 
@@ -93,14 +89,30 @@ export default function Footer() {
             </div>
           </div>
 
+           {/* OUR PRODUCTS */}
+          <div>
+            <h4 className="text-lg font-heading font-semibold text-white mb-4 border-b-2 border-primary pb-2">
+              Find Us Here
+            </h4>
+           
+        <iframe
+          title="Sera Water Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.6512255541593!2d72.62349751053054!3d22.963068479128875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e89b7d84262fb%3A0x47b0efc341b584f8!2sSera%20Water!5e0!3m2!1sen!2sin!4v1766657055991!5m2!1sen!2sin"
+          className="w-full h-[200px] border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+     
+          </div>
+
         </div>
       </div>
 
       {/* ================= ROW 2 : ADDRESSES ================= */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-10">
-          <h4 className="text-2xl font-heading  text-primary mb-6">
-            <FontAwesomeIcon icon={faLocationDot} className="mt-1 text-primary" />   Our Branch Locations
+          <h4 className="text-2xl font-heading  text-white mb-6">
+            <FontAwesomeIcon icon={faLocationDot} className="mt-1 text-white" />   Our Branch Locations
           </h4>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-gray-300 font-body text-sm">

@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       {/* ABOUT INTRO */}
-      <section className="py-8 bg-white">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
           {/* LEFT CONTENT */}
@@ -63,7 +63,7 @@ const About = () => {
       </section>
 
       {/* EXPERIENCE & EXPERTISE */}
-      <section className="py-10 bg-gray-50" data-aos="fade-up">
+      <section className="py-10 " data-aos="fade-up">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary mb-6">
             Experience & Expertise in Industrial Water Treatment
@@ -83,7 +83,7 @@ const About = () => {
       </section>
 
       {/* VISION & MISSION */}
-      <section className="py-10 bg-gradient-to-b from-white to-primary/5">
+      <section className="py-10 ">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* VISION */}
@@ -115,102 +115,80 @@ const About = () => {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-10 bg-gradient-to-b from-primary/5 to-white">
-        <div className="max-w-7xl mx-auto px-6">
+      <section
+  className="relative bg-fixed bg-center bg-cover py-24"
+  style={{
+    backgroundImage: "url('/images/about/whychoose-bg.png')",
+  }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/80"></div>
 
-          {/* SECTION HEADING */}
-          <div
-            className="text-center mb-14"
-            data-aos="fade-up"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">
-              Why Choose Sera Water?
-            </h2>
-            <p className="mt-4 text-gray-600 font-body max-w-2xl mx-auto">
-              Industries across Gujarat trust Sera Water for reliable, efficient and
-              compliant water & wastewater treatment solutions.
-            </p>
-          </div>
+  <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
 
-          {/* CARDS */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    {/* Heading */}
+    <div className="text-center mb-14">
+      <h2 className="text-3xl md:text-4xl font-semibold font-heading">
+        Why Choose Us
+      </h2>
+      <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
+        Trusted by industries for reliable, efficient and high-performance water
+        and wastewater treatment solutions.
+      </p>
+    </div>
 
-            {/* CARD 1 */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="0"
-              className="group bg-white rounded-2xl p-8 shadow-sm border border-transparent hover:border-primary hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary text-2xl group-hover:bg-primary group-hover:text-white transition">
-                ⚙️
-              </div>
-              <h4 className="font-heading font-semibold text-darkGray mb-3">
-                Industry Expertise
-              </h4>
-              <p className="text-gray-600 font-body text-sm leading-relaxed">
-                Strong technical expertise in industrial water and wastewater treatment
-                processes across multiple industries.
-              </p>
-            </div>
+    {/* Cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
-            {/* CARD 2 */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              className="group bg-white rounded-2xl p-8 shadow-sm border border-transparent hover:border-primary hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary text-2xl group-hover:bg-primary group-hover:text-white transition">
-                🧩
-              </div>
-              <h4 className="font-heading font-semibold text-darkGray mb-3">
-                Complete Solutions
-              </h4>
-              <p className="text-gray-600 font-body text-sm leading-relaxed">
-                One-stop solution for ETP, STP and WTP equipment including pumps,
-                blowers, aeration and sludge handling systems.
-              </p>
-            </div>
-
-            {/* CARD 3 */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="group bg-white rounded-2xl p-8 shadow-sm border border-transparent hover:border-primary hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary text-2xl group-hover:bg-primary group-hover:text-white transition">
-                ✅
-              </div>
-              <h4 className="font-heading font-semibold text-darkGray mb-3">
-                Quality & Reliability
-              </h4>
-              <p className="text-gray-600 font-body text-sm leading-relaxed">
-                High-quality, energy-efficient and low-maintenance equipment designed
-                for long-term and reliable performance.
-              </p>
-            </div>
-
-            {/* CARD 4 */}
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              className="group bg-white rounded-2xl p-8 shadow-sm border border-transparent hover:border-primary hover:shadow-xl transition-all duration-300 text-center"
-            >
-              <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-primary/10 text-primary text-2xl group-hover:bg-primary group-hover:text-white transition">
-                🤝
-              </div>
-              <h4 className="font-heading font-semibold text-darkGray mb-3">
-                Strong Support
-              </h4>
-              <p className="text-gray-600 font-body text-sm leading-relaxed">
-                Dedicated technical support, prompt service and reliable after-sales
-                assistance for complete peace of mind.
-              </p>
-            </div>
-
-          </div>
-
+      {/* Card 1 */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-yellow-400 text-black text-2xl">
+          ⚙️
         </div>
-      </section>
+        <h4 className="text-lg font-semibold mb-2">Technical Support</h4>
+        <p className="text-gray-300 text-sm">
+          Expert engineers providing dependable technical guidance and service.
+        </p>
+      </div>
+
+      {/* Card 2 */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-yellow-400 text-black text-2xl">
+          ✔
+        </div>
+        <h4 className="text-lg font-semibold mb-2">ISO Certified</h4>
+        <p className="text-gray-300 text-sm">
+          International quality standards with proven reliability.
+        </p>
+      </div>
+
+      {/* Card 3 */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-yellow-400 text-black text-2xl">
+          📊
+        </div>
+        <h4 className="text-lg font-semibold mb-2">Extensive Experience</h4>
+        <p className="text-gray-300 text-sm">
+          Decades of experience across industrial water solutions.
+        </p>
+      </div>
+
+      {/* Card 4 */}
+      <div className="text-center">
+        <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center rounded-full bg-yellow-400 text-black text-2xl">
+          🤝
+        </div>
+        <h4 className="text-lg font-semibold mb-2">Reliable Support</h4>
+        <p className="text-gray-300 text-sm">
+          End-to-end assistance and long-term partnership commitment.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
 <OurJourney />
 
