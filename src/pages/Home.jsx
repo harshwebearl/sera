@@ -1,17 +1,19 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroCarousel from "../components/HeroCarousel";
-import ProductItem from "../components/ProductItem";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import ProductSection from "../components/ProductSection";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import OurClients from "../components/OurClients";
 import Testimonials from "../components/Testimonials";
 import ContactCTA from "../components/ContactCTA";
+import Industries from "../components/Industries";
 
 export default function Home() {
+
+ 
+
   return (
     <>
       <Navbar />
@@ -104,236 +106,18 @@ export default function Home() {
         </div>
       </section>
 
+       
+    {/* product section */}
+    <ProductSection />
 
 
-      {/* PRODUCTS SECTION */}
-      <section className="py-16  ">
-        <div className="max-w-7xl mx-auto px-6">
 
-          {/* SECTION HEADING */}
-          <div className="text-center mb-14">
-            <h2 className="text-2xl md:text-4xl font-heading font-bold text-primary mb-4">Our Product Range</h2>
-            <p className="text-xl text-textGray">
-              Water & Wastewater Treatment Equipment Supplier in Ahmedabad
-            </p>
-
-          </div>
-
-
-          {/* PRODUCTS SWIPER */}
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            spaceBetween={24}
-            loop
-            breakpoints={{
-              0: { slidesPerView: 1 },
-              640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-            }}
-          >
-            <SwiperSlide>
-              <ProductItem
-                title="Blowers"
-                image="/images/products/air-blower.png"
-                link="/products/water-handling/air-blowers"
-                description="High-performance industrial blowers for aeration and wastewater treatment applications."
-              />
-
-            </SwiperSlide>
-
-          
-
-            <SwiperSlide>
-              <ProductItem
-                title="Tubular Diffusers"
-                image="/images/products/tubular-diffusers.jpg"
-                link="/products/water-treatment/tubular-diffusers"
-                description="High-efficiency tubular diffusers designed for uniform air distribution in wastewater treatment systems."
-              />
-
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <ProductItem
-                title="Hydraulic Pump"
-                image="/images/products/hydraulic-actuated-pump.png"
-                link="/products/dosingpump-agitators"
-                description="High-precision hydraulic diaphragm dosing pumps designed for accurate chemical dosing in industrial applications."
-              />
-
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <ProductItem
-                title="RO Vessels"
-                image="/images/products/vessel.jpg"
-                link="/products/ro-components/vessels"
-                description="High-pressure RO vessels designed for reliable membrane housing in water purification systems."
-              />
-
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <ProductItem
-                title="Industrial Agitator & Mixer"
-                image="/images/products/agitator-mixer.png"
-                link="/products/dosingpump-agitators/industrial-agitator-mixer"
-                description="High-performance industrial agitators and mixers designed for efficient mixing, blending, and agitation in water and wastewater treatment processes."
-              />
-
-            </SwiperSlide>
-          </Swiper>
-
-        </div>
-      </section>
 
 
       {/* INDUSTRIES WE SERVE */}
-      <section className="py-10 ">
-        <div className="max-w-7xl mx-auto px-6">
+      <Industries />
 
-          {/* SECTION HEADING */}
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary">
-              Industries We Serve
-            </h2>
-            <p className="mt-4 text-gray-600 font-body max-w-3xl mx-auto">
-              Sera Water provides reliable water and wastewater treatment solutions
-              for a wide range of industries. Our ETP, STP and WTP equipment is designed
-              to meet industry-specific requirements, environmental regulations and
-              operational efficiency.
-            </p>
-          </div>
-
-          {/* INDUSTRY GRID */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {/* CHEMICAL INDUSTRY */}
-            <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg hover:shadow-primary transition overflow-hidden">
-              <div className="h-40 w-full overflow-hidden">
-                <img
-                  src="/images/industries/chemical.jpg"
-                  alt="Wastewater Treatment Solutions for Chemical Industry"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-heading font-semibold text-darkGray group-hover:text-primary mb-3">
-                  Chemical Industry
-                </h3>
-                <p className="text-gray-600 font-body">
-                  Wastewater treatment solutions for chemical manufacturing units,
-                  including ETP equipment, dosing pumps, agitators and sludge
-                  dewatering systems.
-                </p>
-              </div>
-            </div>
-
-            {/* PHARMACEUTICAL INDUSTRY */}
-            <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg hover:shadow-primary transition overflow-hidden">
-              <div className="h-40 w-full overflow-hidden">
-                <img
-                  src="/images/industries/pharma.jpg"
-                  alt="Water Treatment for Pharmaceutical Industry"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-heading font-semibold text-darkGray group-hover:text-primary mb-3">
-                  Pharmaceutical Industry
-                </h3>
-                <p className="text-gray-600 font-body">
-                  Advanced water and wastewater treatment systems for pharmaceutical
-                  plants to ensure compliance, purity and efficient effluent handling.
-                </p>
-              </div>
-            </div>
-
-            {/* TEXTILE INDUSTRY */}
-            <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg hover:shadow-primary transition overflow-hidden">
-              <div className="h-40 w-full overflow-hidden">
-                <img
-                  src="/images/industries/textile.jpg"
-                  alt="ETP Solutions for Textile Industry"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-heading font-semibold text-darkGray group-hover:text-primary mb-3">
-                  Textile Industry
-                </h3>
-                <p className="text-gray-600 font-body">
-                  Complete ETP solutions for textile processing units including
-                  aeration systems, blowers, diffusers and sludge dewatering machines.
-                </p>
-              </div>
-            </div>
-
-            {/* MANUFACTURING UNITS */}
-            <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg hover:shadow-primary transition overflow-hidden">
-              <div className="h-40 w-full overflow-hidden">
-                <img
-                  src="/images/industries/manufacturing.jpg"
-                  alt="Industrial Wastewater Treatment for Manufacturing Units"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-heading font-semibold text-darkGray group-hover:text-primary mb-3">
-                  Manufacturing Units
-                </h3>
-                <p className="text-gray-600 font-body">
-                  Industrial wastewater treatment equipment for manufacturing plants
-                  to manage process water and effluent discharge effectively.
-                </p>
-              </div>
-            </div>
-
-            {/* COMMERCIAL & RESIDENTIAL */}
-            <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg hover:shadow-primary transition overflow-hidden">
-              <div className="h-40 w-full overflow-hidden">
-                <img
-                  src="/images/industries/residental.jpg"
-                  alt="STP Solutions for Commercial and Residential Projects"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-heading font-semibold text-darkGray group-hover:text-primary mb-3">
-                  Commercial & Residential Projects
-                </h3>
-                <p className="text-gray-600 font-body">
-                  STP systems and sewage treatment solutions for commercial buildings,
-                  residential societies, hotels and infrastructure projects.
-                </p>
-              </div>
-            </div>
-
-            {/* FOOD & BEVERAGE */}
-            <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg hover:shadow-primary transition overflow-hidden">
-              <div className="h-40 w-full overflow-hidden">
-                <img
-                  src="/images/industries/food.jpg"
-                  alt="Water Treatment Solutions for Food and Beverage Industry"
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-              <div className="p-8">
-                <h3 className="text-xl font-heading font-semibold text-darkGray group-hover:text-primary mb-3">
-                  Food & Beverage Industry
-                </h3>
-                <p className="text-gray-600 font-body">
-                  Water treatment and effluent management solutions for food and
-                  beverage processing units to maintain hygiene and compliance.
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
+      <OurClients />
 
       {/* WHY CHOOSE US */}
       <section
@@ -410,7 +194,7 @@ export default function Home() {
       </section>
 
 
-      <OurClients />
+      
 
       <Testimonials />
 
