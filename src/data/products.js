@@ -187,119 +187,338 @@ export const products = [
     ],
   },
   {
-  category: "dosingpump-agitators",
-  categoryName: "Dosing Pumps & Agitators",
-  items: [
-    {
-      slug: "hydraulically-actuated-diaphragm-pump",
-      name: "Hydraulically Actuated Diaphragm Pump",
-      image: "/images/products/hydraulic-actuated-pump.png",
-      shortDesc:
-        "High-precision hydraulic diaphragm dosing pumps designed for accurate chemical dosing in industrial applications.",
-      description:
-        "Hydraulically actuated diaphragm pumps are designed for precise and leak-free dosing of chemicals in demanding industrial environments. These pumps offer excellent accuracy, high pressure handling, and long service life, making them ideal for chemical dosing in water and wastewater treatment plants.",
-      applications: [
-        "Water & Wastewater Treatment",
-        "Chemical Processing Plants",
-        "Power Plants",
-        "Pharmaceutical Industry",
-      ],
-      features: [
-        "High dosing accuracy",
-        "Leak-proof diaphragm design",
-        "Suitable for corrosive chemicals",
-        "Long operational life",
-      ],
-    },
+    category: "dosingpump-agitators",
+    categoryName: "Dosing Pumps & Agitators",
+    items: [
+      {
+        slug: "hydraulic-pump",
+        name: "Hydraulic Pump",
+        image: "/images/products/hydraulic-actuated-pump.png",
+        shortDesc:
+          "High-precision hydraulic diaphragm dosing pumps designed for accurate chemical dosing in industrial applications.",
+        description:
+          "Hydraulically actuated diaphragm pumps are designed for precise and leak-free dosing of chemicals in demanding industrial environments. These pumps offer excellent accuracy, high pressure handling, and long service life, making them ideal for chemical dosing in water and wastewater treatment plants.",
+        applications: [
+          "Water & Wastewater Treatment",
+          "Chemical Processing Plants",
+          "Power Plants",
+          "Pharmaceutical Industry",
+        ],
+        features: [
+          "High dosing accuracy",
+          "Leak-proof diaphragm design",
+          "Suitable for corrosive chemicals",
+          "Long operational life",
+        ],
+      },
 
-    {
-      slug: "plunger-metering-pump",
-      name: "Plunger Metering Pump",
-      image: "/images/products/plunger-metering-pump.png",
-      shortDesc:
-        "Heavy-duty plunger metering pumps for high-pressure chemical dosing applications.",
-      description:
-        "Plunger metering pumps are designed for high-pressure and high-flow applications where precise chemical dosing is required. These pumps are widely used in industrial processes requiring consistent and accurate flow control.",
-      applications: [
-        "Chemical Processing",
-        "Oil & Gas Industry",
-        "Water Treatment Plants",
-        "Industrial Manufacturing",
-      ],
-      features: [
-        "High pressure capability",
-        "Robust mechanical construction",
-        "Accurate flow control",
-        "Suitable for harsh operating conditions",
-      ],
-    },
+      {
+        slug: "plunger-pump",
+        name: "Plunger Pump",
+        image: "/images/products/plunger-metering-pump.png",
+        shortDesc:
+          "Heavy-duty plunger metering pumps for high-pressure chemical dosing applications.",
+        description:
+          "Plunger metering pumps are designed for high-pressure and high-flow applications where precise chemical dosing is required. These pumps are widely used in industrial processes requiring consistent and accurate flow control.",
+        applications: [
+          "Chemical Processing",
+          "Oil & Gas Industry",
+          "Water Treatment Plants",
+          "Industrial Manufacturing",
+        ],
+        features: [
+          "High pressure capability",
+          "Robust mechanical construction",
+          "Accurate flow control",
+          "Suitable for harsh operating conditions",
+        ],
+      },
+      {
+        slug: "mechanical-pump",
+        name: "Mechanical Pump",
+        image: "/images/products/mechanical-diaphragm-pump.png",
+        shortDesc:
+          "Reliable diaphragm dosing pumps for low to medium pressure applications.",
+        description:
+          "Mechanical diaphragm metering pumps are ideal for precise chemical dosing where moderate pressure and flow rates are required. They offer simple construction, easy maintenance, and long service life.",
+        applications: [
+          "Water Treatment Plants",
+          "Chemical Dosing Systems",
+          "Industrial Process Control",
+        ],
+        features: [
+          "Simple and robust design",
+          "Low maintenance cost",
+          "Accurate chemical dosing",
+          "Compact and durable construction",
+        ],
+      },
+      {
+        slug: "screw-pump",
+        name: "Screw Pump",
+        image: "/images/products/progressive-cavity-pump.png",
+        shortDesc:
+          "Positive displacement pumps designed for smooth and pulsation-free fluid transfer.",
+        description:
+          "Progressive cavity pumps are ideal for handling viscous, abrasive, and shear-sensitive fluids. These pumps ensure steady flow and are widely used in wastewater treatment, sludge handling, and industrial processing applications.",
+        applications: [
+          "Sludge Transfer",
+          "Wastewater Treatment Plants",
+          "Chemical Processing",
+          "Industrial Slurry Handling",
+        ],
+        features: [
+          "Low pulsation flow",
+          "Handles high viscosity fluids",
+          "Excellent suction capability",
+          "Durable and low-maintenance design",
+        ],
+      },
+      {
+        slug: "electronic-dosing-pump",
+        name: "Electronic Dosing Pump",
+        image: "/images/products/electronic-dosing-pump.png",
+        shortDesc:
+          "Electronically controlled dosing pumps for precise and automated chemical dosing.",
+        description:
+          "Electronic dosing pumps provide accurate and programmable chemical dosing for water treatment and industrial applications. These pumps support automation and integration with control systems for precise flow regulation.",
+        applications: [
+          "Water Treatment Systems",
+          "Cooling Towers",
+          "Chemical Dosing Applications",
+          "Process Automation Systems",
+        ],
+        features: [
+          "Digital control interface",
+          "High dosing accuracy",
+          "Energy efficient operation",
+          "Easy integration with PLC/SCADA",
+        ],
+      },
+      {
+        slug: "industrial-agitator-mixer",
+        name: "Industrial Agitator & Mixer",
+        image: "/images/products/agitator-mixer.png",
+        shortDesc:
+          "High-performance industrial agitators and mixers designed for efficient mixing, blending, and agitation in water and wastewater treatment processes.",
+        description:
+          "Our industrial agitators and mixers are engineered to deliver uniform mixing and reliable performance in demanding industrial environments. These systems are widely used in water and wastewater treatment plants, chemical processing units, and industrial applications where consistent agitation and process stability are critical. Designed for durability, energy efficiency, and optimal mixing performance, our agitators ensure superior process control and operational reliability.",
+        applications: [
+          "Water & Wastewater Treatment Plants",
+          "Effluent Treatment Plants (ETP)",
+          "Sewage Treatment Plants (STP)",
+          "Chemical & Process Industries",
+          "Mixing and Homogenization Applications"
+        ],
+        features: [
+          "High-efficiency mixing performance",
+          "Robust and corrosion-resistant construction",
+          "Energy-efficient motor and gearbox design",
+          "Suitable for continuous and heavy-duty operation",
+          "Customizable design for various tank sizes"
+        ]
+      },
+      {
+        slug: "dosing-system",
+        name: "Dosing System",
+        image: "/images/products/dosing-system.jpg",
+        shortDesc:
+          "High-precision dosing systems designed for accurate chemical dosing in water and wastewater treatment applications.",
+        description:
+          "Our dosing systems are engineered to deliver precise and consistent chemical dosing for water and wastewater treatment processes. These systems are widely used in ETP, STP, and industrial process applications to ensure optimal chemical balance, improved treatment efficiency, and safe operation. Designed for accuracy, durability, and ease of control, our dosing systems support a wide range of chemicals and flow requirements.",
+        applications: [
+          "Water Treatment Plants (WTP)",
+          "Effluent Treatment Plants (ETP)",
+          "Sewage Treatment Plants (STP)",
+          "Chemical Dosing Applications",
+          "Industrial Process Control"
+        ],
+        features: [
+          "Accurate and consistent chemical dosing",
+          "Compatible with various chemicals and fluids",
+          "Easy operation and maintenance",
+          "Corrosion-resistant construction",
+          "Energy-efficient and reliable performance"
+        ]
+      },
+    ],
+  },
+  {
+    category: "ro-components",
+    categoryName: "RO Components",
+    items: [
+      {
+        slug: "vessels",
+        name: "RO Vessels",
+        image: "/images/products/vessel.jpg",
+        shortDesc:
+          "High-pressure RO vessels designed for reliable membrane housing in water purification systems.",
+        description:
+          "RO vessels are pressure-resistant housings used to contain RO membranes in water treatment systems. Designed for durability and high performance, our RO vessels ensure safe operation under high pressure and consistent water purification for industrial and commercial applications.",
+        applications: [
+          "Reverse Osmosis Plants",
+          "Water Purification Systems",
+          "Industrial RO Systems",
+          "Commercial Water Treatment Units",
+        ],
+        features: [
+          "High pressure resistance",
+          "Corrosion-resistant material",
+          "Compatible with standard RO membranes",
+          "Long operational life",
+        ],
+      },
 
-    {
-      slug: "mechanical-diaphragm-pump",
-      name: "Mechanical Diaphragm Metering Pump",
-      image: "/images/products/mechanical-diaphragm-pump.png",
-      shortDesc:
-        "Reliable diaphragm dosing pumps for low to medium pressure applications.",
-      description:
-        "Mechanical diaphragm metering pumps are ideal for precise chemical dosing where moderate pressure and flow rates are required. They offer simple construction, easy maintenance, and long service life.",
-      applications: [
-        "Water Treatment Plants",
-        "Chemical Dosing Systems",
-        "Industrial Process Control",
-      ],
-      features: [
-        "Simple and robust design",
-        "Low maintenance cost",
-        "Accurate chemical dosing",
-        "Compact and durable construction",
-      ],
-    },
+      {
+        slug: "pressure-tube",
+        name: "Pressure Tube",
+        image: "/images/products/pressure-tube.jpg",
+        shortDesc:
+          "Durable pressure tubes for safe and efficient RO membrane housing.",
+        description:
+          "Pressure tubes are designed to safely hold RO membranes under high pressure. Manufactured using high-grade composite materials, they ensure structural strength, leak-free performance, and long-term durability in RO plants.",
+        applications: [
+          "RO Water Treatment Plants",
+          "Industrial Filtration Systems",
+          "Desalination Units",
+        ],
+        features: [
+          "High tensile strength",
+          "Corrosion and chemical resistant",
+          "Lightweight and durable design",
+          "Long service life",
+        ],
+      },
 
-    {
-      slug: "progressive-cavity-pump",
-      name: "Progressive Cavity Pump",
-      image: "/images/products/progressive-cavity-pump.png",
-      shortDesc:
-        "Positive displacement pumps designed for smooth and pulsation-free fluid transfer.",
-      description:
-        "Progressive cavity pumps are ideal for handling viscous, abrasive, and shear-sensitive fluids. These pumps ensure steady flow and are widely used in wastewater treatment, sludge handling, and industrial processing applications.",
-      applications: [
-        "Sludge Transfer",
-        "Wastewater Treatment Plants",
-        "Chemical Processing",
-        "Industrial Slurry Handling",
-      ],
-      features: [
-        "Low pulsation flow",
-        "Handles high viscosity fluids",
-        "Excellent suction capability",
-        "Durable and low-maintenance design",
-      ],
-    },
+      {
+        slug: "float-switch",
+        name: "Float Switch",
+        image: "/images/products/float-switch.jpg",
+        shortDesc:
+          "Reliable float switches for automatic water level control.",
+        description:
+          "Float switches are used to control liquid levels in tanks and sumps. They automatically start or stop pumps based on water level, preventing overflow or dry running and ensuring safe system operation.",
+        applications: [
+          "Water Storage Tanks",
+          "RO & STP Systems",
+          "Sump Tanks",
+          "Industrial Fluid Control",
+        ],
+        features: [
+          "Accurate level detection",
+          "Durable float construction",
+          "Low maintenance",
+          "Suitable for multiple liquids",
+        ],
+      },
 
-    {
-      slug: "electronic-dosing-pump",
-      name: "Electronic Dosing Pump",
-      image: "/images/products/electronic-dosing-pump.png",
-      shortDesc:
-        "Electronically controlled dosing pumps for precise and automated chemical dosing.",
-      description:
-        "Electronic dosing pumps provide accurate and programmable chemical dosing for water treatment and industrial applications. These pumps support automation and integration with control systems for precise flow regulation.",
-      applications: [
-        "Water Treatment Systems",
-        "Cooling Towers",
-        "Chemical Dosing Applications",
-        "Process Automation Systems",
-      ],
-      features: [
-        "Digital control interface",
-        "High dosing accuracy",
-        "Energy efficient operation",
-        "Easy integration with PLC/SCADA",
-      ],
-    },
-  ],
-},
+      {
+        slug: "pressure-guage",
+        name: "Pressure Gauge",
+        image: "/images/products/pressure-gauge.jpg",
+        shortDesc:
+          "Accurate pressure measurement instruments for water treatment systems.",
+        description:
+          "Pressure gauges are used to monitor system pressure in RO plants, pipelines, and filtration systems. They ensure safe operation by providing accurate real-time pressure readings.",
+        applications: [
+          "RO Plants",
+          "Industrial Pipelines",
+          "Water Filtration Systems",
+        ],
+        features: [
+          "High measurement accuracy",
+          "Clear dial display",
+          "Robust construction",
+          "Long operational life",
+        ],
+      },
+
+      {
+        slug: "multiport-valve",
+        name: "Multiport Valve",
+        image: "/images/products/multiport-valve.png ",
+        shortDesc:
+          "Multiport valves for filtration control and backwashing operations.",
+        description:
+          "Multiport valves are used in filtration systems to control flow direction during filtration, backwash, rinse, and other operations. They ensure efficient operation of sand and carbon filters.",
+        applications: [
+          "Water Filtration Plants",
+          "Sand & Carbon Filters",
+          "Swimming Pool Filtration Systems",
+        ],
+        features: [
+          "Multiple operation modes",
+          "Leak-proof design",
+          "Smooth handle operation",
+          "High durability",
+        ],
+      },
+
+      {
+        slug: "distribution-system",
+        name: "Distribution System",
+        image: "/images/products/distribution-system.jpg",
+        shortDesc:
+          "Efficient water distribution systems for uniform flow and pressure.",
+        description:
+          "Distribution systems ensure uniform water flow across filtration units and treatment zones. Designed for durability and efficiency, they help maintain consistent system performance.",
+        applications: [
+          "Water Treatment Plants",
+          "Industrial Distribution Systems",
+          "RO & STP Units",
+        ],
+        features: [
+          "Uniform flow distribution",
+          "High mechanical strength",
+          "Easy installation",
+          "Long operational life",
+        ],
+      },
+
+      {
+        slug: "sand",
+        name: "Filter Sand",
+        image: "/images/products/filtered-sand.jpg",
+        shortDesc:
+          "High-quality filter sand for effective removal of suspended solids.",
+        description:
+          "Filter sand is used in multimedia and pressure sand filters to remove suspended particles and turbidity from water. It plays a critical role in pre-treatment processes.",
+        applications: [
+          "Water Filtration Plants",
+          "Effluent Treatment Plants",
+          "Swimming Pool Filtration",
+        ],
+        features: [
+          "High filtration efficiency",
+          "Uniform particle size",
+          "Long service life",
+          "Low maintenance",
+        ],
+      },
+
+      {
+        slug: "carbon",
+        name: "Activated Carbon",
+        image: "/images/products/carbon.jpg",
+        shortDesc:
+          "High-quality activated carbon for odor, color, and chlorine removal.",
+        description:
+          "Activated carbon is widely used for removing organic contaminants, chlorine, odor, and color from water. It enhances water quality and protects downstream equipment in treatment systems.",
+        applications: [
+          "Drinking Water Treatment",
+          "Industrial Water Purification",
+          "Pre-treatment for RO Systems",
+        ],
+        features: [
+          "High adsorption capacity",
+          "Improves water taste and odor",
+          "Chemical-resistant material",
+          "Long-lasting performance",
+        ],
+      },
+    ],
+  }
+
 
 
 ];

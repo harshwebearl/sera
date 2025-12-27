@@ -91,11 +91,13 @@ export default function Navbar() {
       name: "Dosing Pumps & Agitators",
       path: "/products/dosingpump-agitators",
       children: [
-        { name: "Hydraulically Actuated Diaphragm Type Metering Pump", path: "/products/dosingpump-agitators/hydraulically-actuated-diaphragm-pump" },
-        { name: "Plunger Metering Pump", path: "/products/dosingpump-agitators/plunger-metering-pump" },
-        { name: "Mechanical Diaphragm Type Metering Pump", path: "/products/dosingpump-agitators/mechanical-diaphragm-pump" },
-        { name: "Progressive Cavity Screw Pump", path: "/products/dosingpump-agitators/progressive-cavity-pump" },
         { name: "Electronic Dosing Pump", path: "/products/dosingpump-agitators/electronic-dosing-pump" },
+        { name: "Hydraulic Pump", path: "/products/dosingpump-agitators/hydraulic-pump" },
+        { name: "Mechanical  Pump", path: "/products/dosingpump-agitators/mechanical-pump" },
+        { name: "Plunger Pump", path: "/products/dosingpump-agitators/plunger-pump" },
+        { name: "Screw Pump", path: "/products/dosingpump-agitators/screw-pump" },
+        { name: "Industrial Agitator / Mixer", path: "/products/dosingpump-agitators/industrial-agitator-mixer" },
+        { name: "Dosing System", path: "/products/dosingpump-agitators/dosing-system" },
       ],
     },
     {
