@@ -136,8 +136,8 @@ export const products = [
   },
 
   {
-    category: "water-treatment",
-    categoryName: "Water Treatment Components",
+    category: "sludge-handling",
+    categoryName: "Sludge Handling Systems",
     items: [
       {
         slug: "centrifuge-machine",

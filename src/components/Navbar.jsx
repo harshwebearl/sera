@@ -82,14 +82,14 @@ export default function Navbar() {
       ],
     },
     {
-      name: "Waste Water Components",
-      path: "/products/water-treatment",
+      name: "Sludge Handling Systems",
+      path: "/products/sludge-handling",
       children: [       
-        { name: "Screw Pump", path: "/products/water-treatment/screw-pump" },
-        { name: "Sludge Dewatering", path: "/products/water-treatment/sludge-dewatering" },
-        { name: "Tubesettler Media", path: "/products/water-treatment/tubesettler-media" },
-        { name: "Centrifuge Machine", path: "/products/water-treatment/centrifuge-machine" },
-        { name: "Filter Press", path: "/products/water-treatment/filter-press" },
+        { name: "Screw Pump", path: "/products/sludge-handling/screw-pump" },
+        { name: "Sludge Dewatering", path: "/products/sludge-handling/sludge-dewatering" },
+        { name: "Tubesettler Media", path: "/products/sludge-handling/tubesettler-media" },
+        { name: "Centrifuge Machine", path: "/products/sludge-handling/centrifuge-machine" },
+        { name: "Filter Press", path: "/products/sludge-handling/filter-press" },
       ],
     },
     {
