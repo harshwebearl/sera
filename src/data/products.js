@@ -3,7 +3,7 @@ export const products = [
 
 
   {
-    category: "ariation-equipment",
+    category: "aeration-equipment",
     categoryName: "Airation Equipment",
     items: [
       {

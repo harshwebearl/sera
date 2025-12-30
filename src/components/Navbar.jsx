@@ -70,15 +70,15 @@ export default function Navbar() {
 
   const products = [
     {
-      name: "Ariation Equipment ",
-      path: "/products/ariation-equipment",
+      name: "Aeration Equipment ",
+      path: "/products/aeration-equipment",
       children: [
-        { name: "Blowers", path: "/products/ariation-equipment/blowers" },
-        { name: "Acoustic Hoods", path: "/products/ariation-equipment/acoustic-hoods" },
-        { name: "Spare Parts / Accessories", path: "/products/ariation-equipment/spare-parts" },
-         { name: "Tubular Diffusers", path: "/products/ariation-equipment/tubular-diffusers" },
-        { name: "Disc Diffusers", path: "/products/ariation-equipment/disc-diffusers" },
-        { name: "MBBR Media", path: "/products/ariation-equipment/mbbr-media" },
+        { name: "Blowers", path: "/products/aeration-equipment/blowers" },
+        { name: "Acoustic Hoods", path: "/products/aeration-equipment/acoustic-hoods" },
+        { name: "Spare Parts / Accessories", path: "/products/aeration-equipment/spare-parts" },
+         { name: "Tubular Diffusers", path: "/products/aeration-equipment/tubular-diffusers" },
+        { name: "Disc Diffusers", path: "/products/aeration-equipment/disc-diffusers" },
+        { name: "MBBR Media", path: "/products/aeration-equipment/mbbr-media" },
       ],
     },
     {
