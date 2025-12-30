@@ -70,23 +70,26 @@ export default function Navbar() {
 
   const products = [
     {
-      name: "Water Handling Components ",
-      path: "/products/water-handling",
+      name: "Ariation Equipment ",
+      path: "/products/ariation-equipment",
       children: [
-        { name: "Blowers", path: "/products/water-handling/blowers" },
-        { name: "Sludge Dewatering", path: "/products/water-handling/sludge-dewatering" },
-        { name: "Acoustic Hoods", path: "/products/water-handling/acoustic-hoods" },
-        { name: "Spare Parts / Accessories", path: "/products/water-handling/spare-parts" },
+        { name: "Blowers", path: "/products/ariation-equipment/blowers" },
+        { name: "Acoustic Hoods", path: "/products/ariation-equipment/acoustic-hoods" },
+        { name: "Spare Parts / Accessories", path: "/products/ariation-equipment/spare-parts" },
+         { name: "Tubular Diffusers", path: "/products/ariation-equipment/tubular-diffusers" },
+        { name: "Disc Diffusers", path: "/products/ariation-equipment/disc-diffusers" },
+        { name: "MBBR Media", path: "/products/ariation-equipment/mbbr-media" },
       ],
     },
     {
       name: "Waste Water Components",
       path: "/products/water-treatment",
-      children: [
-        { name: "Tubular Diffusers", path: "/products/water-treatment/tubular-diffusers" },
-        { name: "Disc Diffusers", path: "/products/water-treatment/disc-diffusers" },
+      children: [       
+        { name: "Screw Pump", path: "/products/water-treatment/screw-pump" },
+        { name: "Sludge Dewatering", path: "/products/water-treatment/sludge-dewatering" },
         { name: "Tubesettler Media", path: "/products/water-treatment/tubesettler-media" },
-        { name: "MBBR Media", path: "/products/water-treatment/mbbr-media" },
+        { name: "Centrifuge Machine", path: "/products/water-treatment/centrifuge-machine" },
+        { name: "Filter Press", path: "/products/water-treatment/filter-press" },
       ],
     },
     {
@@ -97,23 +100,22 @@ export default function Navbar() {
         { name: "Hydraulic Pump", path: "/products/dosingpump-agitators/hydraulic-pump" },
         { name: "Mechanical  Pump", path: "/products/dosingpump-agitators/mechanical-pump" },
         { name: "Plunger Pump", path: "/products/dosingpump-agitators/plunger-pump" },
-        { name: "Screw Pump", path: "/products/dosingpump-agitators/screw-pump" },
         { name: "Industrial Agitator / Mixer", path: "/products/dosingpump-agitators/industrial-agitator-mixer" },
         { name: "Dosing System", path: "/products/dosingpump-agitators/dosing-system" },
       ],
     },
     {
-      name: "RO Components",
-      path: "/products/ro-components",
+      name: "Filteration Equipment",
+      path: "/products/filteration-equipments",
       children: [
-        { name: "Vessels", path: "/products/ro-components/vessels" },
-        { name: "Pressure Tube", path: "/products/ro-components/pressure-tube" },
-        { name: "Float Switch", path: "/products/ro-components/float-switch" },
-        { name: "Pressure Guage", path: "/products/ro-components/pressure-guage" },
-        { name: "Multiport Valve", path: "/products/ro-components/multiport-valve" },
-        { name: "Distribution System", path: "/products/ro-components/distribution-system" },
-        { name: "Sand", path: "/products/ro-components/sand" },
-        { name: "Carbon", path: "/products/ro-components/carbon" },
+        { name: "Vessels", path: "/products/filteration-equipments/vessels" },
+        { name: "Pressure Tube", path: "/products/filteration-equipments/pressure-tube" },
+        { name: "Float Switch", path: "/products/filteration-equipments/float-switch" },
+        { name: "Pressure Guage", path: "/products/filteration-equipments/pressure-guage" },
+        { name: "Multiport Valve", path: "/products/filteration-equipments/multiport-valve" },
+        { name: "Distribution System", path: "/products/filteration-equipments/distribution-system" },
+        { name: "Sand", path: "/products/filteration-equipments/sand" },
+        { name: "Carbon", path: "/products/filteration-equipments/carbon" },
       ],
     },
   ];
@@ -182,7 +184,7 @@ export default function Navbar() {
 
           <div className="relative group hidden md:block cursor-pointer">
             <NavLink to="/products" className={navLinkClass}>
-              Products
+              Products  
             </NavLink>
 
             {/* FIRST LEVEL DROPDOWN */}

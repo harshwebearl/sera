@@ -3,8 +3,8 @@ export const products = [
 
 
   {
-    category: "water-handling",
-    categoryName: "Water Handling Components",
+    category: "ariation-equipment",
+    categoryName: "Airation Equipment",
     items: [
       {
         slug: "blowers",
@@ -29,24 +29,66 @@ export const products = [
         ],
       },
       {
-        slug: "sludge-dewatering",
-        name: "Sludge Dewatering",
-        image: "/images/products/sludge-dewatering.png",
+        slug: "disc-diffusers",
+        name: "Disc Diffusers",
+        image: "/images/products/disc-diffusers.jpg",
         shortDesc:
-          "Efficient sludge dewatering systems to reduce sludge volume and disposal costs.",
+          "Energy-efficient disc diffusers for fine bubble aeration in wastewater treatment plants.",
         description:
-          "Our sludge dewatering machines are designed to effectively separate solids from wastewater sludge, reducing sludge volume and improving handling efficiency. Sera Water offers reliable sludge dewatering solutions for ETP and STP plants serving chemical, textile, pharmaceutical and manufacturing industries.",
+          "Disc diffusers are designed to deliver fine bubble aeration, ensuring maximum oxygen transfer efficiency. Ideal for STP and ETP applications, they help reduce power consumption while maintaining optimal biological treatment performance.",
         applications: [
-          "ETP & STP Plants",
-          "Chemical Industry",
-          "Textile Industry",
-          "Pharmaceutical Industry",
+          "Sewage Treatment Plants (STP)",
+          "Effluent Treatment Plants (ETP)",
+          "Industrial Wastewater Treatment",
+          "Biological Aeration Systems",
         ],
         features: [
-          "High solid-liquid separation efficiency",
-          "Reduced sludge disposal cost",
-          "Easy operation & maintenance",
-          "Robust industrial construction",
+          "High oxygen transfer rate",
+          "Low pressure drop",
+          "Uniform air distribution",
+          "Corrosion-resistant materials",
+        ],
+      },
+      {
+        slug: "tubular-diffusers",
+        name: "Tubular Diffusers",
+        image: "/images/products/tubular-diffusers.jpg",
+        shortDesc:
+          "High-efficiency tubular diffusers designed for uniform air distribution in wastewater treatment systems.",
+        description:
+          "Tubular diffusers are widely used in aeration tanks of wastewater treatment plants to provide efficient oxygen transfer and uniform air distribution. These diffusers improve biological treatment efficiency, reduce energy consumption, and ensure consistent aeration performance in ETP and STP applications.",
+        applications: [
+          "Municipal Sewage Treatment Plants",
+          "Industrial Effluent Treatment Plants",
+          "Aeration Tanks",
+          "Biological Treatment Systems",
+        ],
+        features: [
+          "High oxygen transfer efficiency",
+          "Durable EPDM membrane construction",
+          "Uniform air distribution",
+          "Low maintenance and long service life",
+        ],
+      },
+      {
+        slug: "mbbr-media",
+        name: "MBBR Media",
+        image: "/images/products/MBBR-Media.jpg",
+        shortDesc:
+          "Advanced MBBR media for biological wastewater treatment processes.",
+        description:
+          "MBBR (Moving Bed Biofilm Reactor) media provides high surface area for microbial growth, enhancing biological treatment efficiency in sewage and effluent treatment plants. It improves pollutant removal and system stability.",
+        applications: [
+          "Municipal Wastewater Treatment",
+          "Industrial Effluent Treatment",
+          "Biological Reactors",
+          "Upgradation of Existing STPs",
+        ],
+        features: [
+          "High biofilm surface area",
+          "Excellent mechanical strength",
+          "Long service life",
+          "Improves treatment efficiency",
         ],
       },
       {
@@ -98,48 +140,90 @@ export const products = [
     categoryName: "Water Treatment Components",
     items: [
       {
-        slug: "tubular-diffusers",
-        name: "Tubular Diffusers",
-        image: "/images/products/tubular-diffusers.jpg",
+        slug: "centrifuge-machine",
+        name: "Centrifuge Machine",
+        image: "/images/products/centrifuge.jpg",
         shortDesc:
-          "High-efficiency tubular diffusers designed for uniform air distribution in wastewater treatment systems.",
+          "High-speed centrifuge machines designed for efficient solid-liquid separation in industrial applications.",
         description:
-          "Tubular diffusers are widely used in aeration tanks of wastewater treatment plants to provide efficient oxygen transfer and uniform air distribution. These diffusers improve biological treatment efficiency, reduce energy consumption, and ensure consistent aeration performance in ETP and STP applications.",
+          "Our centrifuge machines are engineered to deliver high-performance separation of solids and liquids using centrifugal force. Widely used in wastewater treatment, chemical processing, pharmaceuticals, and food industries, these machines ensure efficient dewatering, reduced sludge volume, and reliable continuous operation.",
         applications: [
-          "Municipal Sewage Treatment Plants",
-          "Industrial Effluent Treatment Plants",
-          "Aeration Tanks",
-          "Biological Treatment Systems",
+          "Effluent Treatment Plants (ETP)",
+          "Sewage Treatment Plants (STP)",
+          "Chemical & Pharmaceutical Industries",
+          "Food & Beverage Processing Units",
         ],
         features: [
-          "High oxygen transfer efficiency",
-          "Durable EPDM membrane construction",
-          "Uniform air distribution",
-          "Low maintenance and long service life",
+          "High-speed centrifugal separation",
+          "Continuous and automatic operation",
+          "Low maintenance and high reliability",
+          "Compact design with energy efficiency",
+        ],
+      },
+      {
+        slug: "filter-press",
+        name: "Filter Press",
+        image: "/images/products/fliterpress.jpg",
+        shortDesc:
+          "Efficient solid-liquid separation system for sludge dewatering and wastewater treatment.",
+        description:
+          "Filter press systems are widely used for effective solid-liquid separation in industrial wastewater treatment processes. Designed for high filtration efficiency, our filter presses help reduce sludge volume, improve cake dryness, and ensure cost-effective waste management across multiple industries.",
+        applications: [
+          "ETP & STP Plants",
+          "Chemical & Pharmaceutical Industries",
+          "Food Processing Units",
+          "Metal Finishing & Electroplating Industries",
+        ],
+        features: [
+          "High filtration efficiency",
+          "Low moisture content in sludge cake",
+          "Robust and durable construction",
+          "Easy operation and maintenance",
+        ],
+      },
+      {
+        slug: "sludge-dewatering",
+        name: "Sludge Dewatering",
+        image: "/images/products/sludge-dewatering.png",
+        shortDesc:
+          "Efficient sludge dewatering systems to reduce sludge volume and disposal costs.",
+        description:
+          "Our sludge dewatering machines are designed to effectively separate solids from wastewater sludge, reducing sludge volume and improving handling efficiency. Sera Water offers reliable sludge dewatering solutions for ETP and STP plants serving chemical, textile, pharmaceutical and manufacturing industries.",
+        applications: [
+          "ETP & STP Plants",
+          "Chemical Industry",
+          "Textile Industry",
+          "Pharmaceutical Industry",
+        ],
+        features: [
+          "High solid-liquid separation efficiency",
+          "Reduced sludge disposal cost",
+          "Easy operation & maintenance",
+          "Robust industrial construction",
+        ],
+      },
+      {
+        slug: "screw-pump",
+        name: "Screw Pump",
+        image: "/images/products/progressive-cavity-pump.png",
+        shortDesc:
+          "Positive displacement pumps designed for smooth and pulsation-free fluid transfer.",
+        description:
+          "Progressive cavity pumps are ideal for handling viscous, abrasive, and shear-sensitive fluids. These pumps ensure steady flow and are widely used in wastewater treatment, sludge handling, and industrial processing applications.",
+        applications: [
+          "Sludge Transfer",
+          "Wastewater Treatment Plants",
+          "Chemical Processing",
+          "Industrial Slurry Handling",
+        ],
+        features: [
+          "Low pulsation flow",
+          "Handles high viscosity fluids",
+          "Excellent suction capability",
+          "Durable and low-maintenance design",
         ],
       },
 
-      {
-        slug: "disc-diffusers",
-        name: "Disc Diffusers",
-        image: "/images/products/disc-diffusers.jpg",
-        shortDesc:
-          "Energy-efficient disc diffusers for fine bubble aeration in wastewater treatment plants.",
-        description:
-          "Disc diffusers are designed to deliver fine bubble aeration, ensuring maximum oxygen transfer efficiency. Ideal for STP and ETP applications, they help reduce power consumption while maintaining optimal biological treatment performance.",
-        applications: [
-          "Sewage Treatment Plants (STP)",
-          "Effluent Treatment Plants (ETP)",
-          "Industrial Wastewater Treatment",
-          "Biological Aeration Systems",
-        ],
-        features: [
-          "High oxygen transfer rate",
-          "Low pressure drop",
-          "Uniform air distribution",
-          "Corrosion-resistant materials",
-        ],
-      },
 
       {
         slug: "tubesettler-media",
@@ -163,27 +247,7 @@ export const products = [
         ],
       },
 
-      {
-        slug: "mbbr-media",
-        name: "MBBR Media",
-        image: "/images/products/MBBR-Media.jpg",
-        shortDesc:
-          "Advanced MBBR media for biological wastewater treatment processes.",
-        description:
-          "MBBR (Moving Bed Biofilm Reactor) media provides high surface area for microbial growth, enhancing biological treatment efficiency in sewage and effluent treatment plants. It improves pollutant removal and system stability.",
-        applications: [
-          "Municipal Wastewater Treatment",
-          "Industrial Effluent Treatment",
-          "Biological Reactors",
-          "Upgradation of Existing STPs",
-        ],
-        features: [
-          "High biofilm surface area",
-          "Excellent mechanical strength",
-          "Long service life",
-          "Improves treatment efficiency",
-        ],
-      },
+
     ],
   },
   {
@@ -251,27 +315,6 @@ export const products = [
           "Low maintenance cost",
           "Accurate chemical dosing",
           "Compact and durable construction",
-        ],
-      },
-      {
-        slug: "screw-pump",
-        name: "Screw Pump",
-        image: "/images/products/progressive-cavity-pump.png",
-        shortDesc:
-          "Positive displacement pumps designed for smooth and pulsation-free fluid transfer.",
-        description:
-          "Progressive cavity pumps are ideal for handling viscous, abrasive, and shear-sensitive fluids. These pumps ensure steady flow and are widely used in wastewater treatment, sludge handling, and industrial processing applications.",
-        applications: [
-          "Sludge Transfer",
-          "Wastewater Treatment Plants",
-          "Chemical Processing",
-          "Industrial Slurry Handling",
-        ],
-        features: [
-          "Low pulsation flow",
-          "Handles high viscosity fluids",
-          "Excellent suction capability",
-          "Durable and low-maintenance design",
         ],
       },
       {
@@ -344,8 +387,8 @@ export const products = [
     ],
   },
   {
-    category: "ro-components",
-    categoryName: "RO Components",
+    category: "filteration-equipments",
+    categoryName: "RFilteration Equipment",
     items: [
       {
         slug: "vessels",
