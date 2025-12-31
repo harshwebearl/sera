@@ -142,7 +142,7 @@ export const products = [
       {
         slug: "centrifuge-machine",
         name: "Centrifuge Machine",
-        image: "/images/products/centrifuge.jpg",
+        image: "/images/products/centrifuge.png",
         shortDesc:
           "High-speed centrifuge machines designed for efficient solid-liquid separation in industrial applications.",
         description:
@@ -163,7 +163,7 @@ export const products = [
       {
         slug: "filter-press",
         name: "Filter Press",
-        image: "/images/products/fliterpress.jpg",
+        image: "/images/products/fliterpress.png",
         shortDesc:
           "Efficient solid-liquid separation system for sludge dewatering and wastewater treatment.",
         description:
