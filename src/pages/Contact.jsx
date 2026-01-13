@@ -48,14 +48,14 @@ export default function Contact() {
                 city: "Surat Branch",
                 address: "105, Regent Plaza, Dindoli, Surat - 394210.",
               },
-              {
-                city: "Pune Branch",
-                address: "30, Saraswati Navale Industrial Estate, Nehre, Pune – 411041.",
-              },
-              {
-                city: "Lucknow Branch",
-                address: "34, Hind City, Ganeshpur, Deva Industrial Road, Lucknow - 226028.",
-              },
+              // {
+              //   city: "Pune Branch",
+              //   address: "30, Saraswati Navale Industrial Estate, Nehre, Pune – 411041.",
+              // },
+              // {
+              //   city: "Lucknow Branch",
+              //   address: "34, Hind City, Ganeshpur, Deva Industrial Road, Lucknow - 226028.",
+              // },
             ].map((branch, index) => (
               <div
                 key={index}

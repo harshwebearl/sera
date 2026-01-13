@@ -401,8 +401,7 @@ export default function Navbar() {
             >
               <FontAwesomeIcon icon={faLocationDot} className="text-xl" />
               <span className="w-fit" >
-                Shed No 94, Gajanan  Industrial Park,
-                Vatva, Ahmedabad – 382445
+                Shed No 53, Ambica Industrial Estate, Phase I, Vatva, Ahmedabad, Gujarat 382445.
               </span>
             </a>
 

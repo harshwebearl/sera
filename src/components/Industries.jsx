@@ -1,10 +1,12 @@
 import {
-  FaTint,
-  FaFire,
-  FaIndustry,
-  FaBookOpen,
-  FaRecycle,
-  FaCogs
+   FaTint, 
+  FaFire, 
+  FaRecycle, 
+  FaBookOpen, 
+  FaPills, 
+  FaBeer, 
+  FaDna, 
+  FaLeaf 
 } from "react-icons/fa";
 
 export default function Industries() {
@@ -15,7 +17,7 @@ export default function Industries() {
     },
     {
       title: "Oil & Gas Industry",
-      icon: <FaFire />,
+        icon: <FaFire />,
     },
     {
       title: "Environmental & Energy",
@@ -26,13 +28,22 @@ export default function Industries() {
       icon: <FaBookOpen />,
     },
     {
-      title: "Manufacturing Industry",
-      icon: <FaIndustry />,
+      title: "Sugar & Pharma Industries",
+       icon: <FaPills />,
     },
     {
-      title: "Industrial Utilities",
-      icon: <FaCogs />,
+      title: "Winery, Brewery Industries Additive injection",
+    icon: <FaBeer />,
     },
+    {
+      title: "Life sciences & biotechnologies Industries",
+      icon: <FaDna />,
+    },
+    {
+      title: "Production of Biofuels",
+      icon: <FaLeaf />,
+    },
+    
   ];
 
   return (
@@ -45,11 +56,11 @@ export default function Industries() {
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {industries.map((item, index) => (
             <div
               key={index}
-              className="bg-[#5c6b6b] rounded-xl py-10 px-6 flex flex-col items-center text-center transition hover:bg-[#687979] border border-white"
+              className="bg-[#5c6b6b] rounded-xl py-6 px-6 flex flex-col items-center text-center transition hover:bg-[#687979] border border-white"
             >
               {/* ICON */}
               <div className="w-20 h-20 flex items-center justify-center rounded-full bg-[#4e5d5d] mb-6">

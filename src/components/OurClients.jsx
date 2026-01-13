@@ -52,12 +52,10 @@ export default function OurClients() {
                   className="
                     h-[140px] w-[140px]
                     object-contain
-                    grayscale
-                    opacity-70
+                    opacity-100
                     transition-all
                     duration-300
                     group-hover:grayscale-0
-                    group-hover:opacity-100
                     group-hover:scale-105
                   "
                 />
