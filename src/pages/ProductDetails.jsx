@@ -8,10 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useState } from "react";
 
 export default function ProductDetails() {
-  const [openVideo, setOpenVideo] = useState(false);
 
   const { category, slug } = useParams();
 
@@ -93,7 +91,6 @@ export default function ProductDetails() {
               </h2>
 
               <div
-                onClick={() => setOpenVideo(true)}
                 className="relative cursor-pointer group aspect-video rounded-lg overflow-hidden shadow"
               >
                 <iframe
