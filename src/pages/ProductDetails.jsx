@@ -8,8 +8,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { useState } from "react";
 
 export default function ProductDetails() {
+  const [openVideo, setOpenVideo] = useState(false);
+
   const { category, slug } = useParams();
 
   const categoryData = products.find((cat) => cat.category === category);
@@ -27,6 +30,11 @@ export default function ProductDetails() {
   const relatedProducts = categoryData.items.filter(
     (item) => item.slug !== slug
   );
+
+  const videoId = product.videoUrl.split("youtu.be/")[1].split("?")[0];
+
+
+
 
   return (
     <>
@@ -74,6 +82,59 @@ export default function ProductDetails() {
           </div>
         </div>
 
+
+        {product.videoUrl && (
+          <div className="grid md:grid-cols-2 gap-10 mt-20">
+
+            {/* VIDEO PREVIEW */}
+            <div>
+              <h2 className="text-2xl font-bold mb-4 text-primaryDark">
+                Product Video
+              </h2>
+
+              <div
+                onClick={() => setOpenVideo(true)}
+                className="relative cursor-pointer group aspect-video rounded-lg overflow-hidden shadow"
+              >
+                <iframe
+                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                  title={product.name}
+                  className="w-full h-full"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+
+              </div>
+            </div>
+
+            {/* BROCHURE */}
+            {product.brochure && (
+              <div className="flex flex-col justify-center">
+                <h2 className="text-2xl font-bold mb-4 text-primaryDark">
+                  Download Brochure
+                </h2>
+
+                <p className="text-gray-600 mb-6">
+                  Download complete technical specifications of {product.name}.
+                </p>
+
+                <a
+                  href={product.brochure}
+                  download
+                  className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primaryDark transition w-fit"
+                >
+                  Download PDF
+                </a>
+              </div>
+            )}
+          </div>
+        )}
+
+
+
+
+
+
         {/* RELATED PRODUCTS SLIDER */}
         <div className="mt-20">
           <h2 className="text-2xl font-bold mb-6 text-primaryDark">
@@ -93,24 +154,24 @@ export default function ProductDetails() {
             {relatedProducts.map((item) => (
               <SwiperSlide key={item.slug}>
                 <div className="border border-primaryDark/30 rounded-xl p-5 hover:shadow-md hover:shadow-primary transition group">
-                 <Link
+                  <Link
                     to={`/products/${category}/${item.slug}`}
                     className="inline-block text-primary font-semibold"
                   > <img
-                    src={item.image}
-                    alt={item.name}
-                    className="h-40 w-full object-contain mb-4 group-hover:scale-105 transition"
-                  />
+                      src={item.image}
+                      alt={item.name}
+                      className="h-40 w-full object-contain mb-4 group-hover:scale-105 transition"
+                    />
 
-                  <h3 className="text-lg font-semibold text-primaryDark mb-2 bg-primary/10 text-center">
-                    {item.name}
-                  </h3>
+                    <h3 className="text-lg font-semibold text-primaryDark mb-2 bg-primary/10 text-center">
+                      {item.name}
+                    </h3>
 
-                  <p className="text-sm text-gray-600 mb-3 h-10">
-                    {item.shortDesc}
-                  </p>
+                    <p className="text-sm text-gray-600 mb-3 h-10">
+                      {item.shortDesc}
+                    </p>
 
-                  
+
                   </Link>
                 </div>
               </SwiperSlide>
@@ -120,6 +181,8 @@ export default function ProductDetails() {
       </div>
 
       <Footer />
+
+
     </>
   );
 }

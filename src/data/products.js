@@ -1,7 +1,6 @@
 
 export const products = [
 
-
   {
     category: "aeration-equipment",
     categoryName: "Airation Equipment",
@@ -27,6 +26,8 @@ export const products = [
           "Continuous duty design",
           "Long service life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "disc-diffusers",
@@ -48,6 +49,8 @@ export const products = [
           "Uniform air distribution",
           "Corrosion-resistant materials",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "tubular-diffusers",
@@ -69,6 +72,8 @@ export const products = [
           "Uniform air distribution",
           "Low maintenance and long service life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "mbbr-media",
@@ -90,6 +95,8 @@ export const products = [
           "Long service life",
           "Improves treatment efficiency",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "acoustic-hoods",
@@ -111,6 +118,8 @@ export const products = [
           "Easy installation & access",
           "Custom design options available",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "spare-parts",
@@ -131,6 +140,8 @@ export const products = [
           "Quick availability",
           "Reliable after-sales support",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
     ],
   },
@@ -159,6 +170,8 @@ export const products = [
           "Low maintenance and high reliability",
           "Compact design with energy efficiency",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "filter-press",
@@ -180,6 +193,8 @@ export const products = [
           "Robust and durable construction",
           "Easy operation and maintenance",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "sludge-dewatering",
@@ -201,6 +216,8 @@ export const products = [
           "Easy operation & maintenance",
           "Robust industrial construction",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "screw-pump",
@@ -222,6 +239,8 @@ export const products = [
           "Excellent suction capability",
           "Durable and low-maintenance design",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
 
@@ -245,6 +264,8 @@ export const products = [
           "Easy installation and maintenance",
           "Improves plant capacity",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
 
@@ -274,6 +295,8 @@ export const products = [
           "Suitable for corrosive chemicals",
           "Long operational life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -296,6 +319,8 @@ export const products = [
           "Accurate flow control",
           "Suitable for harsh operating conditions",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "mechanical-pump",
@@ -316,6 +341,8 @@ export const products = [
           "Accurate chemical dosing",
           "Compact and durable construction",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "electronic-dosing-pump",
@@ -337,6 +364,8 @@ export const products = [
           "Energy efficient operation",
           "Easy integration with PLC/SCADA",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "industrial-agitator-mixer",
@@ -359,7 +388,9 @@ export const products = [
           "Energy-efficient motor and gearbox design",
           "Suitable for continuous and heavy-duty operation",
           "Customizable design for various tank sizes"
-        ]
+        ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
       {
         slug: "dosing-system",
@@ -382,7 +413,9 @@ export const products = [
           "Easy operation and maintenance",
           "Corrosion-resistant construction",
           "Energy-efficient and reliable performance"
-        ]
+        ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
     ],
   },
@@ -410,6 +443,8 @@ export const products = [
           "Compatible with standard RO membranes",
           "Long operational life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -431,6 +466,8 @@ export const products = [
           "Lightweight and durable design",
           "Long service life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -453,6 +490,8 @@ export const products = [
           "Low maintenance",
           "Suitable for multiple liquids",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -474,6 +513,8 @@ export const products = [
           "Robust construction",
           "Long operational life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -495,6 +536,8 @@ export const products = [
           "Smooth handle operation",
           "High durability",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -516,6 +559,8 @@ export const products = [
           "Easy installation",
           "Long operational life",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -537,6 +582,8 @@ export const products = [
           "Long service life",
           "Low maintenance",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
 
       {
@@ -558,6 +605,8 @@ export const products = [
           "Chemical-resistant material",
           "Long-lasting performance",
         ],
+        videoUrl: "https://youtu.be/kH5qls5MZJw?si=KBxRmsKxsxwsIkeu",
+        brochure: "/brochures/slug.pdf",
       },
     ],
   }

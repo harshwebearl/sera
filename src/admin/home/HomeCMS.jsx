@@ -38,7 +38,7 @@ export default function HomeCMS() {
         "<strong>Sera Water</strong> is a leading water treatment equipment supplier in Ahmedabad, specializing in complete solutions for <strong>ETP, STP, and WTP plants</strong>.               We provide high-quality wastewater treatment equipment including dosing pumps,                twin and tri lobe blowers, sludge dewatering machines, agitators, MBBR media,                diffusers, and other essential water treatment components for industrial and                commercial applications.",
       description2:
         "As a reliable <strong>wastewater treatment solutions provider in Gujarat</strong>,we serve chemical, pharmaceutical, textile, and manufacturing industries with efficient, durable, and cost-effective water treatment systems designed to meet environmental compliance and operational efficiency.",
-         image: "/images/home/sera-about-section.png",
+         image: "/images/home/sera-about-section2.jpg",
     },
     features: [
       "Advanced treatment technology",

@@ -79,7 +79,7 @@ export default function Home() {
               {/* IMAGE */}
               <div className="mb-6 overflow-hidden rounded-lg sm:hidden lg:block">
                 <img
-                  src="/images/home/sera-about-section.png"
+                  src="/images/home/sera-about-section2.jpg"
                   alt="Why Choose Sera Water - Water Treatment Equipment Supplier in Ahmedabad"
                   className="w-full h-[300px] md:h-[450px] object-cover hover:scale-105 transition duration-500"
                 />
