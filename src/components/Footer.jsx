@@ -135,7 +135,7 @@ export default function Footer() {
               </span>
             </a>
 
-            {/* <a href="https://maps.app.goo.gl/mhm6JnejxtJAQaT99" target="_blank" rel="noreferrer" className="hover:bg-textGray/10 p-2 rounded-lg">
+            <a href="https://maps.app.goo.gl/mhm6JnejxtJAQaT99" target="_blank" rel="noreferrer" className="hover:bg-textGray/10 p-2 rounded-lg">
               <h4 className="text-lg font-heading font-semibold text-primary/80 border-b-2 border-primary pb-1 mb-4">
                Pune:
               </h4>
@@ -151,7 +151,7 @@ export default function Footer() {
               <span className="text-textGray text-lg">
                 34, Hind City, Ganeshpur, Deva Industrial Road, Lucknow - 226028.
               </span>
-            </a> */}
+            </a>
 
 
             

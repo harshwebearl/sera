@@ -42,6 +42,15 @@ const slides = [
             "Sera Water is a trusted acoustic hood supplier in Ahmedabad providing high-quality noise control enclosures for blowers, pumps and industrial equipment. Our acoustic hoods effectively reduce sound levels, ensure compliance with noise regulations and maintain proper ventilation for ETP, STP and WTP plant applications.",
         productImg: "/images/products/acoustic-hoods.png",
         bgImg: "/images/home/dosingpump-carousel.png",
+    },
+
+    {
+        h1: "Filter Press Supplier in Ahmedabad",
+        h2: "Industrial Filter Press Systems",
+        description:
+            "Filter press systems are widely used for effective solid-liquid separation in industrial wastewater treatment processes. Designed for high filtration efficiency, our filter presses help reduce sludge volume, improve cake dryness, and ensure cost-effective waste management across multiple industries.",
+        productImg: "/images/products/fliterpress.png",
+        bgImg: "/images/home/dosingpump-carousel.png",
     }
 
 ];
