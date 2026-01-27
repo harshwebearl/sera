@@ -32,9 +32,12 @@ export default function AdminLayout() {
       )}
 
       {/* MAIN CONTENT */}
-      <div className="flex-1 flex flex-col">
+      {/* for table responsive */}
+      {/* <div className="flex-1 flex flex-col overflow-auto"> */}
+
+      <div className="flex-1 flex flex-col overflow-auto">
         <Topbar onMenuClick={() => setSidebarOpen(true)} />
-        <main className="flex-1 overflow-y-auto p-6">
+        <main className="flex-1 overflow-y-auto  p-6">
           <Outlet />
         </main>
       </div>

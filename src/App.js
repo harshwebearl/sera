@@ -38,6 +38,13 @@ import EditProduct from './admin/products/EditProduct.jsx';
 import GalleryList from './admin/gallery/GalleryList.jsx';
 import AddGallery from './admin/gallery/AddGallery.jsx';
 import ProductCategory from './pages/ProductCategory.jsx';
+import ContactCMS from './admin/contact/ContactCMS.jsx';
+import EditContactCMS from './admin/contact/EditContactCMS.jsx';
+import EnquiryList from './admin/contact/EnquiryList.jsx';
+import AdminAddresses from './admin/contact/address/AdminAddresses.jsx';
+import AddAddress from './admin/contact/address/AddAddress.jsx';
+import EditAddress from './admin/contact/address/EditAddress.jsx';
+import AddProduct from './admin/products/AddProduct.jsx';
 
 
 function App() {
@@ -99,8 +106,11 @@ function App() {
 
           {/* PRODUCTS */}
           <Route path="productslist" element={<ProductList />} />
-          <Route path="products/edit/:slug" element={<EditProduct />} />
-          <Route path="/admin/products/:slug" element={<AdminProductDetails />} />
+          <Route path="/admin/products/:category/:slug" element={<AdminProductDetails />} />
+          <Route path="/admin/products/edit/:category/:slug" element={<EditProduct />} />
+          <Route path="/admin/products/add" element={<AddProduct />} />
+
+
 
           {/* gallery */}
           <Route path="gallerylist" element={<GalleryList />} />
@@ -108,20 +118,14 @@ function App() {
 
 
 
-          {/* GALLERY */}
-          {/* <Route path="gallery" element={<Gallery />} /> */}
+          <Route path="contactcms" element={<ContactCMS />} />
+          <Route path="contact/edit" element={<EditContactCMS />} />
+          <Route path="enquiries" element={<EnquiryList />} />
 
-          {/* TESTIMONIALS */}
-          {/* <Route path="testimonials" element={<Testimonials />} /> */}
+          <Route path="addresses" element={<AdminAddresses />} />
+          <Route path="addresses/add" element={<AddAddress />} />
+          <Route path="addresses/edit/:id" element={<EditAddress />} />
 
-          {/* ENQUIRIES */}
-          {/* <Route path="enquiries" element={<Enquiries />} /> */}
-
-          {/* SEO SETTINGS */}
-          {/* <Route path="seo" element={<SeoSettings />} /> */}
-
-          {/* SITE SETTINGS */}
-          {/* <Route path="settings" element={<SiteSettings />} /> */}
 
         </Route>
 

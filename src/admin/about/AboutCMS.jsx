@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import OurJourneyCMS from "./OurJourneyCMS";
 
 export default function AboutCMS() {
   const navigate = useNavigate();
+
 
   const aboutData = {
     hero: {
@@ -20,23 +22,23 @@ export default function AboutCMS() {
       mission: "To deliver innovative and sustainable water treatment solutions.",
       vision: "To become a trusted global leader in water and wastewater management.",
     },
-    journey: [
-      {
-        year: "2015",
-        title: "Company Founded",
-        description: "Started with a vision to deliver quality water solutions.",
-      },
-      {
-        year: "2018",
-        title: "Expansion",
-        description: "Expanded services across industrial sectors.",
-      },
-      {
-        year: "2022",
-        title: "Technology Upgrade",
-        description: "Introduced advanced treatment and automation systems.",
-      },
-    ],
+    // journey: [
+    //   {
+    //     year: "2015",
+    //     title: "Company Founded",
+    //     description: "Started with a vision to deliver quality water solutions.",
+    //   },
+    //   {
+    //     year: "2018",
+    //     title: "Expansion",
+    //     description: "Expanded services across industrial sectors.",
+    //   },
+    //   {
+    //     year: "2022",
+    //     title: "Technology Upgrade",
+    //     description: "Introduced advanced treatment and automation systems.",
+    //   },
+    // ],
   };
 
   return (
@@ -75,18 +77,8 @@ export default function AboutCMS() {
         <p><strong>Vision:</strong> {aboutData.missionVision.vision}</p>
       </section>
 
-      {/* JOURNEY */}
-      <section className="bg-white p-6 rounded shadow">
-        <h2 className="font-semibold text-lg mb-4 text-primaryDark">Our Journey</h2>
 
-        <ul className="space-y-3">
-          {aboutData.journey.map((item, index) => (
-            <li key={index}>
-              <strong>{item.year}:</strong> {item.title} – {item.description}
-            </li>
-          ))}
-        </ul>
-      </section>
+      <OurJourneyCMS />
     </div>
   );
 }

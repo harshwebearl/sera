@@ -421,7 +421,7 @@ export const products = [
   },
   {
     category: "filteration-equipments",
-    categoryName: "RFilteration Equipment",
+    categoryName: "Filteration Equipment",
     items: [
       {
         slug: "vessels",

@@ -1,76 +1,102 @@
 import { useNavigate } from "react-router-dom";
+import {
+   FaTint, 
+  FaFire, 
+  FaRecycle, 
+  FaBookOpen, 
+  FaPills, 
+  FaBeer, 
+  FaDna, 
+  FaLeaf 
+} from "react-icons/fa";
+
 
 export default function IndustriesCMS() {
   const navigate = useNavigate();
-
-  const industries = [
-    {
-      id: 1,
-      title: "Chemical Industry",
-      description:
-        "Wastewater treatment solutions for chemical manufacturing including ETP systems, dosing pumps and sludge dewatering.",
-      image: "/images/industries/chemical.jpg",
-    },
-    {
-      id: 2,
-      title: "Pharmaceutical Industry",
-      description:
-        "Advanced water and wastewater treatment solutions for pharmaceutical plants ensuring compliance and quality.",
-      image: "/images/industries/pharma.jpg",
-    },
-    {
-      id: 3,
-      title: "Textile Industry",
-      description:
-        "Complete ETP solutions for textile processing including aeration, blowers and sludge handling.",
-      image: "/images/industries/textile.jpg",
-    },
-  ];
+    const industries = [
+      {
+        title: "Water & Waste Water",
+        icon: <FaTint />,
+      },
+      {
+        title: "Oil & Gas Industry",
+          icon: <FaFire />,
+      },
+      {
+        title: "Environmental & Energy",
+        icon: <FaRecycle />,
+      },
+      {
+        title: "Pulp & Paper Industry",
+        icon: <FaBookOpen />,
+      },
+      {
+        title: "Sugar & Pharma Industries",
+         icon: <FaPills />,
+      },
+      {
+        title: "Winery, Brewery Industries Additive injection",
+      icon: <FaBeer />,
+      },
+      {
+        title: "Life sciences & biotechnologies Industries",
+        icon: <FaDna />,
+      },
+      {
+        title: "Production of Biofuels",
+        icon: <FaLeaf />,
+      },
+      
+    ];
+  
 
   return (
     <div className="max-w-7xl mx-auto md:p-6 space-y-6">
-      {/* HEADER */}
-      <div className="flex justify-between items-start md:items-center gap-2 flex-col md:flex-row">
-        <h1 className="text-2xl font-bold text-primaryDark">Industries We Serve</h1>
-        <button  onClick={() => navigate("/admin/createindustry")} className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryDark">
+      <div className="flex justify-between items-start md:items-center flex-col md:flex-row gap-3">
+        <h1 className="text-2xl font-bold text-primaryDark">
+          Industries We Serve
+        </h1>
+
+        <button
+          onClick={() => navigate("/admin/createindustry")}
+          className="bg-primary text-white px-6 py-2 rounded"
+        >
           + Add Industry
         </button>
       </div>
 
-      {/* LIST */}
-      <div className="grid md:grid-cols-3 gap-6">
-        {industries.map((item) => (
-          <div
-            key={item.id}
-            className="bg-white rounded-xl shadow hover:shadow-md hover:shadow-primary transition"
-          >
-            <img
-              src={item.image}
-              alt={item.title}
-              className="h-48 w-full object-cover rounded-t-xl"
-            />
+      <div className="grid md:grid-cols-4 gap-6">
+        {industries.map((item) => {
+          // const Icon = item.icon;
 
-            <div className="p-5">
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="text-gray-600 mt-2 text-sm">
-                {item.description}
-              </p>
+          return (
+            <div
+              key={item.id}
+              className="bg-white border rounded-xl p-6 text-center text-white"
+            >
+              <div className="w-20 h-20 mx-auto rounded-full bg-[#3b4b4c] flex items-center justify-center mb-4">
+                {item.icon}
+              </div>
 
-              <div className="flex gap-3 mt-4">
+              <h3 className="font-semibold text-primary">{item.title}</h3>
+
+              <div className="flex justify-center gap-3 mt-4">
                 <button
-                  onClick={() => navigate(`/admin/industriescms/edit/${item.id}`)}
-                  className="px-4 py-2 bg-primary text-white rounded hover:bg-primaryDark"
+                  onClick={() =>
+                    navigate(`/admin/industriescms/edit/${item.id}`)
+                  }
+                  className="px-4 py-1 bg-primary text-white rounded"
                 >
                   Edit
                 </button>
 
-                <button className="px-4 py-2 border border-red-500 text-red-500 rounded hover:bg-red-500 hover:text-white">
+                <button className="px-4 py-1 border border-red-400 text-red-400 rounded">
                   Delete
                 </button>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ const menu = [
   { name: "Industry Section", path: "/admin/industriescms", icon: "🏠" },
   { name: "Client Section", path: "/admin/clientscms", icon: "🏠" },
   { name: "Testimonial Section", path: "/admin/testimonialscms", icon: "💬" },
+  { name: "Contact Page", path: "/admin/contactcms", icon: "💬" },
   { name: "Logout", path: "/login", icon: "↩" },
 ];
 
@@ -23,11 +24,11 @@ export default function Sidebar({ mobile = false, closeSidebar }) {
       `}
     >
       {/* TOP BAR (LOGO + CLOSE BUTTON FOR MOBILE) */}
-      <div className="flex items-center justify-between p-4 py-2 border-b border-white/10">
+      <div className="flex items-center justify-between p-4 py-1 border-b border-white/10">
         <Link to="/admin/dashboard" onClick={closeSidebar}>
           <img
             src="/images/logo/sera-logo.png"
-            className="h-16 object-contain"
+            className="h-14 object-cover"
             alt="Sera Water Logo"
           />
         </Link>
@@ -45,7 +46,7 @@ export default function Sidebar({ mobile = false, closeSidebar }) {
       </div>
 
       {/* MENU */}
-      <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
+      <nav className="flex-1 p-4 py-0 space-y-2 overflow-y-auto no-scrollbar">
         {menu.map((item, i) => (
           <NavLink
             key={i}

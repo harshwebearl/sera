@@ -1,71 +1,81 @@
-import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { useState } from "react";
+import {
+  FaTint,
+  FaFire,
+  FaRecycle,
+  FaBookOpen,
+  FaPills,
+  FaBeer,
+  FaDna,
+  FaLeaf,
+} from "react-icons/fa";
 
 export default function EditIndustriesCMS() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  const iconOptions = [
+    { label: "Water Drop", value: <FaTint /> },
+    { label: "Fire", value: <FaFire /> },
+    { label: "Recycle", value: <FaRecycle /> },
+    { label: "Book", value: <FaBookOpen /> },
+    { label: "Pills", value: <FaPills /> },
+    { label: "Beer", value: <FaBeer /> },
+    { label: "DNA", value: <FaDna /> },
+    { label: "Leaf", value: <FaLeaf /> },
+  ];
 
-  const [data, setData] = useState({
-    title: "Chemical Industry",
-    description:
-      "Wastewater treatment solutions for chemical manufacturing including ETP systems.",
-    image: "",
-  });
+  const [title, setTitle] = useState("");
+  const [icon, setIcon] = useState("");
+
+  const handleSave = () => {
+    console.log(`
+Update this object in industries array manually for id: ${id}
+
+{
+  title: "${title}",
+  icon: ${icon},
+}
+    `);
+
+    alert("Check console and update industries array manually");
+  };
 
   return (
-    <div className="max-w-4xl mx-auto md:p-6">
-      {/* <h1 className="text-2xl font-bold mb-6 text-primaryDark"></h1> */}
-      {/* HEADER */}
-            <div className="flex justify-between items-center mb-6">
-                <h1 className="text-2xl font-bold text-primaryDark">Edit Industry</h1>
-                <button
-                    onClick={() => navigate("/admin/industriescms")}
-                    className="bg-primary text-white px-6 py-2 rounded hover:bg-primaryDark"
-                >
-                    Back
-                </button>
-            </div>
+    <div className="max-w-3xl mx-auto p-6">
+      <h1 className="text-2xl font-bold mb-6">Edit Industry</h1>
 
-      <div className="bg-white p-6 rounded-lg shadow space-y-4">
-        <div>
-          <label className="block font-medium mb-1">Industry Name</label>
-          <input
-            className="w-full border p-2 rounded border-primaryDark/30"
-            value={data.title}
-            onChange={(e) =>
-              setData({ ...data, title: e.target.value })
-            }
-          />
-        </div>
+      <input
+        type="text"
+        placeholder="Industry Name"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        className="w-full border p-2 rounded mb-4"
+      />
 
-        <div>
-          <label className="block font-medium mb-1">Description</label>
-          <textarea
-            className="w-full border p-2 rounded border-primaryDark/30"
-            rows="4"
-            value={data.description}
-            onChange={(e) =>
-              setData({ ...data, description: e.target.value })
-            }
-          />
-        </div>
+      <select
+        onChange={(e) => setIcon(iconOptions[e.target.value].label)}
+        className="w-full border p-2 rounded mb-4"
+      >
+        <option value="">Select Icon</option>
+        {iconOptions.map((item, index) => (
+          <option key={index} value={index}>
+            {item.label}
+          </option>
+        ))}
+      </select>
 
-        <div>
-          <label className="block font-medium mb-1">Image</label>
-          <input
-            type="file"
-            className="w-full "
-            onChange={(e) =>
-              setData({ ...data, image: e.target.files[0] })
-            }
-          />
-        </div>
+      <button
+        onClick={handleSave}
+        className="bg-primary text-white px-6 py-2 rounded"
+      >
+        Save Changes
+      </button>
 
-        <button className="bg-primary text-white px-6 py-2 rounded mt-4 hover:bg-primaryDark">
-          Save Changes
+       <button onClick={() => navigate("/admin/industriescms")} className="bg-white text-primary px-6 py-2 border border-primary ml-2 rounded">
+          Cancel
         </button>
-      </div>
     </div>
   );
 }

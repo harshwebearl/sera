@@ -94,7 +94,7 @@ export default function ProductDetails() {
                 className="relative cursor-pointer group aspect-video rounded-lg overflow-hidden shadow"
               >
                 <iframe
-                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                  src={`https://www.youtube.com/embed/${videoId}`}
                   title={product.name}
                   className="w-full h-full"
                   allow="autoplay; encrypted-media"
