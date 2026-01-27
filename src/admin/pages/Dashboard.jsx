@@ -1,3 +1,5 @@
+import EnquiryList from "../contact/EnquiryList";
+
 export default function Dashboard() {
   const cards = [
     { title: "Products", value: 4 },
@@ -10,7 +12,7 @@ export default function Dashboard() {
     <>
       <h2 className="text-2xl font-heading text-primaryDark font-bold mb-6">Dashboard</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
         {cards.map((card, i) => (
           <div
             key={i}
@@ -23,6 +25,8 @@ export default function Dashboard() {
           </div>
         ))}
       </div>
+
+       <EnquiryList />
     </>
   );
 }
