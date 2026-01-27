@@ -91,15 +91,16 @@ export default function ProductDetails() {
               </h2>
 
               <div
-                className="relative cursor-pointer group aspect-video rounded-lg overflow-hidden shadow"
+                className="relative cursor-pointer group aspect-video rounded-lg overflow-hidden shadow text-center flex items-center justify-center bg-gray-100"
               >
-                <iframe
+                {/* <iframe
                   src={`https://www.youtube.com/embed/${videoId}`}
                   title={product.name}
                   className="w-full h-full"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
-                ></iframe>
+                ></iframe> */}
+                <h3>Coming Soon</h3>
 
               </div>
             </div>

@@ -347,6 +347,7 @@ export default function Navbar() {
                         <NavLink
                           key={i}
                           to={child.path}
+                          onClick={() => setOpen(false)}
                           className="block py-2 text-sm text-gray-600 hover:text-primary"
                         >
                           {child.name}
