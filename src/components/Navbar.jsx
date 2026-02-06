@@ -324,18 +324,30 @@ export default function Navbar() {
                 <div key={index} className="">
 
                   {/* CATEGORY */}
-                  <button
-                    onClick={() => toggleSubMenu(index)}
-                    className="w-full text-sm flex justify-between items-center px-6 py-3 text-left font-medium"
-                  >
-                    <Link to={item.path}>  {item.name}</Link>
-                    <span
-                      className={`transition-transform ${activeIndex === index ? "rotate-180" : ""
-                        }`}
-                    >
-                      ▾
-                    </span>
-                  </button>
+                 <div className="w-full flex justify-between items-center px-6 py-3">
+                      {/* LEFT SIDE → PAGE NAVIGATION */}
+                      <Link
+                        to={item.path}
+                        onClick={() => setOpen(false)}
+                        className="text-sm font-medium flex-1"
+                      >
+                        {item.name}
+                      </Link>
+
+                      {/* RIGHT SIDE → DROPDOWN TOGGLE */}
+                      <button
+                        onClick={() => toggleSubMenu(index)}
+                        className="text-sm transition-transform"
+                      >
+                        <span
+                          className={`inline-block transition-transform ${
+                            activeIndex === index ? "rotate-180" : ""
+                          }`}
+                        >
+                          ▼
+                        </span>
+                      </button>
+                    </div>
 
                   {/* SUB ITEMS */}
                   <div
